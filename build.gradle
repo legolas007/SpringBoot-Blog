@@ -62,7 +62,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 
 	// 添加  Spring Security 依赖
-	//compile('org.springframework.boot:spring-boot-starter-security')
+	compile('org.springframework.boot:spring-boot-starter-security')
 
 	// 添加 Spring Boot 开发工具依赖
 	compile("org.springframework.boot:spring-boot-devtools")
@@ -76,6 +76,9 @@ dependencies {
 
     // 添加  Apache Commons Lang 依赖
     compile('org.apache.commons:commons-lang3:3.5')
+
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compile('org.projectlombok:lombok:1.16.18')
 
 
     // 该依赖对于编译测试是必须的，默认包含编译产品依赖和编译时依
