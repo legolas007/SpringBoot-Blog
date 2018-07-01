@@ -22,4 +22,4 @@ $(function() {
         $("html,body").animate({scrollTop:"0px"},200);
     });
     NProgress.done();
-});
+ });

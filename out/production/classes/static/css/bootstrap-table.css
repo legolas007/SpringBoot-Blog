@@ -229,7 +229,7 @@
     text-align: left !important;
 }
 
-/* support blog 2 */
+/* support bootstrap 2 */
 .fixed-table-body thead th .th-inner {
     box-sizing: border-box;
 }
@@ -269,7 +269,7 @@
     border-bottom: 1px solid #ddd;
 }
 
-/* support blog 3 */
+/* support bootstrap 3 */
 .bootstrap-table .table thead > tr > th {
     padding: 0;
     margin: 0;

@@ -1,6 +1,5 @@
 /*!
  * blog.html 页面脚本.
- *
  */
 "use strict";
 //# sourceURL=blog.js

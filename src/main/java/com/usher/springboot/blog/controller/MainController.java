@@ -1,10 +1,17 @@
 package com.usher.springboot.blog.controller;
 
+import com.usher.springboot.blog.Entities.Authority;
 import com.usher.springboot.blog.Entities.User;
+import com.usher.springboot.blog.service.AuthorityService;
+import com.usher.springboot.blog.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author: Usher
@@ -13,6 +20,15 @@ import org.springframework.web.bind.annotation.PostMapping;
  */
 @Controller
 public class MainController {
+
+    private static final Long ROLE_USER_AUTHORITY_ID = 2L;
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private AuthorityService authorityService;
+
 
     @GetMapping("/")
     public String root(){
@@ -41,9 +57,22 @@ public class MainController {
         return "register";
     }
 
+    /**
+     * 注册
+     * @param user
+     * @return
+     */
     @PostMapping("/register")
     public String registerUser(User user) {
-        //TODO
-        return "";
+        List<Authority> authorities = new ArrayList<>();
+        authorities.add(authorityService.getAuthorityById(ROLE_USER_AUTHORITY_ID));
+        user.setAuthorities(authorities);
+        userService.saveUser(user);
+        return "redirect:/login";
+    }
+
+    @GetMapping("/search")
+    public String search() {
+        return "search";
     }
 }

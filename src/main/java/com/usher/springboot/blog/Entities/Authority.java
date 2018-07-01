@@ -16,7 +16,7 @@ import javax.persistence.*;
 @Setter
 public class Authority implements GrantedAuthority {
 
-    private static final long serialVersionUID = 3809110319691988413L;
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)//自增长

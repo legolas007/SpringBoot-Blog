@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xsi:schemaLocation="http://www.ultraq.net.nz/thymeleaf/layout ">
+<html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="~{fragments/header :: header}">
 </head>
 <body>
 <div class="container">
 	<div class="row">
 
-		<h2 th:text="${userModel.title}">Welcome to waylau.com</h2>
+		<h2 th:text="${userModel.title}">Welcome to usherblog.com</h2>
 
 	</div><!-- /.row -->
 
@@ -21,7 +19,7 @@
 		<p class="text-left"><strong>ID:</strong><span id="id" th:text="${userModel.user.id}">123</span></p>
 	</div><!-- /.row -->
 	<div class="row">
-		<p class="text-left"><strong>Name:</strong><span id="name" th:text="${userModel.user.name}">waylau</span></p>
+		<p class="text-left"><strong>Name:</strong><span id="name" th:text="${userModel.user.name}">usherblog</span></p>
 	</div><!-- /.row -->
 	<div class="row">
 		<p class="text-left"><strong>Age:</strong><span id="age" th:text="${userModel.user.age}">30</span></p>
