@@ -1,5 +1,6 @@
 package com.usher.springboot.blog.config;
 
+import com.usher.springboot.blog.service.CustomUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -30,6 +31,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Bean
+    CustomUserService customUserService() {
+        return new CustomUserService();
+    }
+
     /**
      * BCrypt加密
      * @return
@@ -45,10 +51,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * created from configure(AuthenticationManagerBuilder) as a bean.
      * @return
      */
-    @Bean
+/*    @Bean
     public UserDetailsService userDetailsService() {
         return super.userDetailsService();
-    }
+    }*/
 
     @Bean
     public AuthenticationProvider authenticationProvider() {

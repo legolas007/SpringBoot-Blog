@@ -4,12 +4,15 @@ import com.usher.springboot.blog.Entities.Authority;
 import com.usher.springboot.blog.Entities.User;
 import com.usher.springboot.blog.service.AuthorityService;
 import com.usher.springboot.blog.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +22,7 @@ import java.util.List;
  * 主页控制器
  */
 @Controller
+@Slf4j
 public class MainController {
 
     private static final Long ROLE_USER_AUTHORITY_ID = 2L;
@@ -63,7 +67,12 @@ public class MainController {
      * @return
      */
     @PostMapping("/register")
-    public String registerUser(User user) {
+    public String registerUser(@Valid User user,
+                               BindingResult bindingResult) {
+
+        if (bindingResult.hasErrors()) {
+            log.error("参数错误！");
+        }
         List<Authority> authorities = new ArrayList<>();
         authorities.add(authorityService.getAuthorityById(ROLE_USER_AUTHORITY_ID));
         user.setAuthorities(authorities);
