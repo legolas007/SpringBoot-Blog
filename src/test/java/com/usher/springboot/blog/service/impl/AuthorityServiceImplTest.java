@@ -1,6 +1,7 @@
-package com.usher.springboot.blog.repository;
+package com.usher.springboot.blog.service.impl;
 
 import com.usher.springboot.blog.Entities.Authority;
+import com.usher.springboot.blog.repository.AuthorityRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,17 +15,16 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AuthorityRepositoryTest {
+public class AuthorityServiceImplTest {
 
     @Autowired
     private AuthorityRepository authorityRepository;
 
+
     @Test
-    public void test(){
+    public void getAuthorityById() {
         Authority authority = authorityRepository.findOne(1L);
+        System.out.println(authority.getAuthority());
         Assert.assertNotNull(authority);
     }
-
-
-
 }
