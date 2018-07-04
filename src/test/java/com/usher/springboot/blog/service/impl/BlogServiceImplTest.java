@@ -36,7 +36,7 @@ public class BlogServiceImplTest {
     public void getBlogById() {
         Blog blog = blogRepository.findOne(1L);
         Assert.assertNotNull(blog);
-        System.out.println(blog.getReading());
+        System.out.println(blog.getReadSize());
     }
 
     @Test
@@ -50,8 +50,8 @@ public class BlogServiceImplTest {
     @Test
     public void readingIncrease() {
         Blog blog = blogRepository.findOne(1L);
-        blog.setReading(blog.getReading() + 1);
+        blog.setReadSize(blog.getReadSize() + 1);
         blogRepository.save(blog);
-        System.out.println(blog.getReading());
+        System.out.println(blog.getReadSize());
     }
 }

@@ -2,16 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf28056c-0290-4803-ac33-c0bf88263cf0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/avatar-defualt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/blogedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/u.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/blogedit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/u.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-04.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logback.2018-07-04.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/BlogServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/BlogServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/component-tageditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/component-tageditor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/cropbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/cropbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/cropbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/cropbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/userspace/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admins/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -95,36 +115,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlogRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/BlogRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BlogServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,16 +128,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/BlogService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="499">
-              <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CommentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -155,8 +136,8 @@
       <file leaf-file-name="CommentServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CommentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="92">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#612#613#0" expanded="true" />
@@ -168,11 +149,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommentController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+            <state relative-caret-position="1047">
+              <caret line="113" column="31" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentRepositoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/users/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogServiceImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,19 +216,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="70" column="87" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="87" />
+              <caret line="70" column="87" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="56" selection-start-line="56" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -683,7 +706,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/config/DruidConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CustomUserService.java" />
@@ -692,11 +714,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/AuthorityRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/BlogRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Comment.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CommentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CommentServiceImpl.java" />
@@ -704,6 +724,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/BlogService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java" />
       </list>
     </option>
   </component>
@@ -717,10 +740,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="515" />
-    <option name="width" value="1934" />
-    <option name="height" value="523" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -809,6 +831,21 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -915,8 +952,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\blog-prototype\src\main\resources\static" />
       <recent name="D:\blog-prototype\src\main\resources" />
+      <recent name="D:\blog-prototype\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -931,32 +968,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
+  <component name="RunManager" selected="JUnit.CommentRepositoryTest.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="AuthorityServiceImplTest.getAuthorityById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-prototype_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.usher.springboot.blog.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.usher.springboot.blog.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.service.impl.AuthorityServiceImplTest" />
-      <option name="METHOD_NAME" value="getAuthorityById" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="BlogRepositoryTest.findByUserAndTitleLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blog-prototype_test" />
@@ -1050,6 +1064,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="CommentRepositoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog-prototype_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.usher.springboot.blog.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.usher.springboot.blog.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.repository.CommentRepositoryTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1109,19 +1146,19 @@
     <list>
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Application (1)" />
-      <item itemvalue="JUnit.AuthorityServiceImplTest.getAuthorityById" />
       <item itemvalue="JUnit.BlogServiceImplTest.getBlogById" />
       <item itemvalue="JUnit.BlogServiceImplTest.readingIncrease" />
       <item itemvalue="JUnit.BlogRepositoryTest.findByUserAndTitleLike" />
       <item itemvalue="JUnit.BlogRepositoryTest.test" />
+      <item itemvalue="JUnit.CommentRepositoryTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentRepositoryTest.test" />
         <item itemvalue="JUnit.BlogRepositoryTest.test" />
         <item itemvalue="JUnit.BlogRepositoryTest.findByUserAndTitleLike" />
         <item itemvalue="JUnit.BlogServiceImplTest.readingIncrease" />
         <item itemvalue="JUnit.BlogServiceImplTest.getBlogById" />
-        <item itemvalue="JUnit.AuthorityServiceImplTest.getAuthorityById" />
       </list>
     </recent_temporary>
   </component>
@@ -1144,14 +1181,11 @@
       <workItem from="1530542469936" duration="2671000" />
       <workItem from="1530627593284" duration="3573000" />
       <workItem from="1530698327960" duration="26000" />
-      <workItem from="1530706984846" duration="8740000" />
+      <workItem from="1530706984846" duration="10581000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserRepositoryTest_findByUsername - 2018.07.01 at 11h 12m 41s.xml">
-      <configuration name="UserRepositoryTest.findByUsername" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AuthorityRepositoryTest_test - 2018.07.02 at 23h 18m 29s.xml">
       <configuration name="AuthorityRepositoryTest.test" configurationId="JUnit" />
     </history-entry>
@@ -1179,12 +1213,15 @@
     <history-entry file="BlogRepositoryTest_test - 2018.07.03 at 22h 47m 47s.xml">
       <configuration name="BlogRepositoryTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommentRepositoryTest_test - 2018.07.04 at 23h 32m 12s.xml">
+      <configuration name="CommentRepositoryTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68156000" />
+    <option name="totallyTimeSpent" value="69997000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="412" width="1547" height="418" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1206,10 +1243,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21825963" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36376604" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18334453" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37734583" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.3297587" />
@@ -1236,20 +1273,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/blogedit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-266">
@@ -1318,13 +1341,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CustomUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1339,11 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-01.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-23958" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1352,16 +1363,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/BlogServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-02.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/contrller/HelloControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1421,9 +1422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-03.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1479,16 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CommentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1500,16 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1530,7 +1508,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="70" column="87" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="87" />
+          <caret line="70" column="87" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1540,21 +1518,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/BlogService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
-          <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-          </folding>
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1565,13 +1529,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java">
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-04.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-61401" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-02.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-45523" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-01.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-03.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-70621" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+        <state relative-caret-position="292">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="113" column="31" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/users/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>

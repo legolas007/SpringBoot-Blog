@@ -79,7 +79,7 @@ $(function() {
 							// 成功后，置换头像图片
 							 $(".blog-avatar").attr("src", data.avatarUrl);
 						 } else {
-							 oastr.error("error!");
+							 toastr.error("error!"+data.message);
 						 }
 						 
 				     },
