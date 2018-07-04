@@ -7,6 +7,8 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.List;
+
 /**
  * @Author: Usher
  * @Description:
@@ -48,21 +50,27 @@ public class Blog implements Serializable {
 
 
     @OneToOne(cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
-    @JoinColumn(name="user_id")
+    @JoinColumn(name="user_id")//外键关联
     private User user;
 
     @Column(nullable = false) // 映射为字段，值不能为空
     @org.hibernate.annotations.CreationTimestamp  // 由数据库自动创建时间
     private Timestamp createTime;
 
-    @Column(name="reading")
-    private Long reading = 0L; // 访问量、阅读量
+    @Column(name="readSize")
+    private Integer readSize = 0; // 访问量
 
-    @Column(name="comments")
-    private Long comments = 0L;  // 评论量
+    @Column(name="commentSize")
+    private Integer commentSize = 0;  // 评论量
 
-    @Column(name="likes")
-    private Long likes = 0L;  // 点赞量
+    @Column(name="likeSize")
+    private Integer likeSize = 0;  // 点赞量
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinTable(name = "blog_comment",joinColumns = @JoinColumn(name = "blog_id",referencedColumnName = "id"),
+    inverseJoinColumns = @JoinColumn(name = "comment_id", referencedColumnName = "id"))
+    private List<Comment> comments;
+
 
     protected Blog() {
         // TODO Auto-generated constructor stub
@@ -73,5 +81,27 @@ public class Blog implements Serializable {
         this.content = content;
     }
 
+    /**
+     * 添加评论
+     * @param comment
+     */
+    public void addComment(Comment comment) {
+        this.comments.add(comment);
+        this.commentSize = this.comments.size();
+    }
+    /**
+     * 删除评论
+     * @param commentId
+     */
+    public void removeComment(Long commentId) {
+        for (int index=0; index < this.comments.size(); index ++ ) {
+            if (comments.get(index).getId() == commentId) {
+                this.comments.remove(index);
+                break;
+            }
+        }
+
+        this.commentSize = this.comments.size();
+    }
 
 }
