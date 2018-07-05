@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head th:replace="~{fragments/header :: header}">
 </head>
 <body>
@@ -17,8 +19,8 @@
                     <a class="blog-edit-avatar" data-toggle="modal"
 								data-target="#flipFlop" role="button"
 								data-th-attr="userName=${userModel.user.username}">  
-								<img th:src="${userModel.user.avatar} == null ? 'https://avatars3.githubusercontent.com/u/3233966?v=3&s=460' : ${userModel.user.avatar} " class="blog-avatar blog-avatar-230"
-                             alt="usherblog">
+								<img th:src="${userModel.user.avatar} == null ? '/images/avatar-defualt.jpg' : ${userModel.user.avatar}" class="blog-avatar blog-avatar-230">
+      
 							</a>
  
                         
@@ -105,7 +107,7 @@
 
  
 <!-- JavaScript -->
-<script src="../../static/js/userspace/main.js" th:src="@{/js/userspace/main.js}"></script>
+<script src="../../js/userspace/main.js" th:src="@{/js/userspace/main.js}"></script>
 
 </body>
 </html>

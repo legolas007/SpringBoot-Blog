@@ -1,5 +1,8 @@
 /*!
  * Blog main style.
+ *
+ * @since: 1.0.0
+ * @author Way Lau <https://waylau.com>
  */
 /* Footer */
 .blog-footer {
@@ -58,6 +61,11 @@
 /* blog avatar */
 .blog-avatar-img {
   max-width: 100%; 
+}
+
+/* 避免图片超出 */
+article img {
+    max-width: 100%;
 }
 
 
