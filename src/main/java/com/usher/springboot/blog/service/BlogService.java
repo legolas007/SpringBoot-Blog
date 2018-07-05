@@ -72,4 +72,8 @@ public interface BlogService {
      * @param id
      */
     void removeComment(Long blogId, Long id);
+
+    void createVote(Long blogId);
+
+    void removeVote(Long blogId, Long id);
 }

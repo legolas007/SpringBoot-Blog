@@ -63,13 +63,18 @@ public class Blog implements Serializable {
     @Column(name="commentSize")
     private Integer commentSize = 0;  // 评论量
 
-    @Column(name="likeSize")
-    private Integer likeSize = 0;  // 点赞量
+    @Column(name="voteSize")
+    private Integer voteSize = 0;  // 点赞量
 
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinTable(name = "blog_comment",joinColumns = @JoinColumn(name = "blog_id",referencedColumnName = "id"),
     inverseJoinColumns = @JoinColumn(name = "comment_id", referencedColumnName = "id"))
-    private List<Comment> comments;
+    private List<Comment> comments;//many
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinTable(name = "blog_vote", joinColumns = @JoinColumn(name = "blog_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "vote_id", referencedColumnName = "id"))
+    private List<Vote> votes;//many
 
 
     protected Blog() {
@@ -104,4 +109,34 @@ public class Blog implements Serializable {
         this.commentSize = this.comments.size();
     }
 
+    public boolean addVote(Vote vote) {
+        boolean isExist = false;
+
+        //判断重复
+        for (int index = 0; index < this.votes.size(); index++) {
+            if (this.votes.get(index).getUser().getId() == vote.getUser().getId()) {
+                isExist = true;
+                break;
+            }
+        }
+
+        if (!isExist) {
+            this.votes.add(vote);
+            this.voteSize = this.votes.size();
+        }
+
+        return isExist;
+    }
+
+    public void removeVote(Long voteId) {
+
+        for (int index=0; index < this.votes.size(); index ++ ) {
+            if (this.votes.get(index).getId() == voteId) {
+                this.votes.remove(index);
+                break;
+            }
+        }
+
+        this.voteSize = this.votes.size();
+    }
 }

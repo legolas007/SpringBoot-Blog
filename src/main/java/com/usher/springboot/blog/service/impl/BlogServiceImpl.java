@@ -3,7 +3,9 @@ package com.usher.springboot.blog.service.impl;
 import com.usher.springboot.blog.Entities.Blog;
 import com.usher.springboot.blog.Entities.Comment;
 import com.usher.springboot.blog.Entities.User;
+import com.usher.springboot.blog.Entities.Vote;
 import com.usher.springboot.blog.repository.BlogRepository;
+import com.usher.springboot.blog.repository.VoteRepository;
 import com.usher.springboot.blog.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -22,6 +24,9 @@ public class BlogServiceImpl  implements BlogService {
 
     @Autowired
     private BlogRepository blogRepository;
+
+    @Autowired
+    private VoteRepository voteRepository;
 
     @Transactional
     @Override
@@ -85,6 +90,28 @@ public class BlogServiceImpl  implements BlogService {
 
         Blog blog = blogRepository.findOne(blogId);
         blog.removeComment(id);
+        blogRepository.save(blog);
+    }
+
+    @Override
+    public void createVote(Long blogId) {
+        Blog blog = blogRepository.findOne(blogId);
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        Vote vote = new Vote(user);
+
+        boolean isExist = blog.addVote(vote);
+
+        if (isExist) {
+            throw new IllegalArgumentException("已点过赞");
+        }
+
+        blogRepository.save(blog);
+    }
+
+    @Override
+    public void removeVote(Long blogId, Long voteId) {
+        Blog blog = blogRepository.findOne(blogId);
+        blog.removeVote(voteId);
         blogRepository.save(blog);
     }
 }
