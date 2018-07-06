@@ -5,7 +5,7 @@ import com.usher.springboot.blog.Entities.User;
 import com.usher.springboot.blog.service.BlogService;
 import com.usher.springboot.blog.service.UserService;
 import com.usher.springboot.blog.util.ConstraintViolationExceptionHandler;
-import com.usher.springboot.blog.vo.Response;
+import com.usher.springboot.blog.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -114,14 +114,14 @@ public class UserspaceController {
      */
     @PostMapping("/{username}/avatar")
     @PreAuthorize("authentication.name.equals(#username)")
-    public ResponseEntity<Response> saveAvatar(@PathVariable("username") String username,
-                                               User user) {
+    public ResponseEntity<ResponseVO> saveAvatar(@PathVariable("username") String username,
+                                                 User user) {
         String avatarUrl = user.getAvatar();
         User originalUser = userService.getUserById(user.getId());
         originalUser.setAvatar(avatarUrl);
         userService.saveUser(originalUser);
 
-        return ResponseEntity.ok().body(new Response(true, "处理成功", avatarUrl));
+        return ResponseEntity.ok().body(new ResponseVO(true, "处理成功", avatarUrl));
     }
 
     /**
@@ -208,16 +208,16 @@ public class UserspaceController {
      */
     @DeleteMapping("/{username}/blogs/{id}")
     @PreAuthorize("authentication.name.equals(#username)")
-    public ResponseEntity<Response> deleteBlog(@PathVariable("username") String username,@PathVariable("id") Long id) {
+    public ResponseEntity<ResponseVO> deleteBlog(@PathVariable("username") String username, @PathVariable("id") Long id) {
 
         try {
             blogService.removeBlog(id);
         } catch (Exception e) {
-            return ResponseEntity.ok().body(new Response(false, e.getMessage()));
+            return ResponseEntity.ok().body(new ResponseVO(false, e.getMessage()));
         }
 
         String redirectUrl = "/u/" + username + "/blogs";
-        return ResponseEntity.ok().body(new Response(true, "处理成功", redirectUrl));
+        return ResponseEntity.ok().body(new ResponseVO(true, "处理成功", redirectUrl));
     }
     /**
      * 获取新增博客的界面
@@ -249,18 +249,18 @@ public class UserspaceController {
      */
     @PostMapping("/{username}/blogs/edit")
     @PreAuthorize("authentication.name.equals(#username)")
-    public ResponseEntity<Response> saveBlog(@PathVariable("username") String username, @RequestBody Blog blog) {
+    public ResponseEntity<ResponseVO> saveBlog(@PathVariable("username") String username, @RequestBody Blog blog) {
         User user = (User)userDetailsService.loadUserByUsername(username);
         blog.setUser(user);
         try {
             blogService.saveBlog(blog);
         } catch (ConstraintViolationException e)  {
-            return ResponseEntity.ok().body(new Response(false, ConstraintViolationExceptionHandler.getMessage(e)));
+            return ResponseEntity.ok().body(new ResponseVO(false, ConstraintViolationExceptionHandler.getMessage(e)));
         } catch (Exception e) {
-            return ResponseEntity.ok().body(new Response(false, e.getMessage()));
+            return ResponseEntity.ok().body(new ResponseVO(false, e.getMessage()));
         }
 
         String redirectUrl = "/u/" + username + "/blogs/" + blog.getId();
-        return ResponseEntity.ok().body(new Response(true, "处理成功", redirectUrl));
+        return ResponseEntity.ok().body(new ResponseVO(true, "处理成功", redirectUrl));
     }
 }

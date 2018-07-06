@@ -6,7 +6,7 @@ import com.usher.springboot.blog.Entities.User;
 import com.usher.springboot.blog.service.BlogService;
 import com.usher.springboot.blog.service.CommentService;
 import com.usher.springboot.blog.util.ConstraintViolationExceptionHandler;
-import com.usher.springboot.blog.vo.Response;
+import com.usher.springboot.blog.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -69,16 +69,16 @@ public class CommentController {
      */
     @PostMapping
     @PreAuthorize("hasAnyAuthority('ROLE_ADMIN','ROLE_USER')")
-    public ResponseEntity<Response> createComment(Long blogId, String commentContent) {
+    public ResponseEntity<ResponseVO> createComment(Long blogId, String commentContent) {
         try {
             blogService.createComment(blogId, commentContent);
         } catch (ConstraintViolationException e) {
-            return ResponseEntity.ok().body(new Response(false, ConstraintViolationExceptionHandler.getMessage(e)));
+            return ResponseEntity.ok().body(new ResponseVO(false, ConstraintViolationExceptionHandler.getMessage(e)));
         } catch (Exception e) {
-            return ResponseEntity.ok().body(new Response(false, e.getMessage()));
+            return ResponseEntity.ok().body(new ResponseVO(false, e.getMessage()));
         }
 
-        return ResponseEntity.ok().body(new Response(true, "处理成功", null));
+        return ResponseEntity.ok().body(new ResponseVO(true, "处理成功", null));
     }
 
     /**
@@ -88,7 +88,7 @@ public class CommentController {
      * @return
      */
     @DeleteMapping("/{id}")
-    public ResponseEntity<Response> deleteBlog(@PathVariable("id") Long id, Long blogId) {
+    public ResponseEntity<ResponseVO> deleteBlog(@PathVariable("id") Long id, Long blogId) {
 
         boolean isOwner = false;
         User user = commentService.getCommentById(id).getUser();
@@ -103,18 +103,18 @@ public class CommentController {
         }
 
         if (!isOwner) {
-            return ResponseEntity.ok().body(new Response(false, "没有操作权限"));
+            return ResponseEntity.ok().body(new ResponseVO(false, "没有操作权限"));
         }
 
         try {
             blogService.removeComment(blogId, id);
             commentService.removeComment(id);
         } catch (ConstraintViolationException e)  {
-            return ResponseEntity.ok().body(new Response(false, ConstraintViolationExceptionHandler.getMessage(e)));
+            return ResponseEntity.ok().body(new ResponseVO(false, ConstraintViolationExceptionHandler.getMessage(e)));
         } catch (Exception e) {
-            return ResponseEntity.ok().body(new Response(false, e.getMessage()));
+            return ResponseEntity.ok().body(new ResponseVO(false, e.getMessage()));
         }
 
-        return ResponseEntity.ok().body(new Response(true, "处理成功", null));
+        return ResponseEntity.ok().body(new ResponseVO(true, "处理成功", null));
     }
 }

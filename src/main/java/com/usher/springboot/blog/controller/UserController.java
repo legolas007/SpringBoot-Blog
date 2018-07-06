@@ -5,7 +5,7 @@ import com.usher.springboot.blog.Entities.User;
 import com.usher.springboot.blog.service.AuthorityService;
 import com.usher.springboot.blog.service.UserService;
 import com.usher.springboot.blog.util.ConstraintViolationExceptionHandler;
-import com.usher.springboot.blog.vo.Response;
+import com.usher.springboot.blog.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -73,7 +73,7 @@ public class UserController {
 	 * @return
 	 */
 	@PostMapping
-	public ResponseEntity<Response> create(User user,Long authorityId){
+	public ResponseEntity<ResponseVO> create(User user, Long authorityId){
         List<Authority> authorities = new ArrayList<>();
         authorities.add(authorityService.getAuthorityById(authorityId));
         user.setAuthorities(authorities);
@@ -101,9 +101,9 @@ public class UserController {
         try {
             userService.saveUser(user);
         } catch (ConstraintViolationException e) {
-            return ResponseEntity.ok().body(new Response(false, ConstraintViolationExceptionHandler.getMessage(e)));
+            return ResponseEntity.ok().body(new ResponseVO(false, ConstraintViolationExceptionHandler.getMessage(e)));
         }
-        return ResponseEntity.ok().body(new Response(true, "处理成功",user));
+        return ResponseEntity.ok().body(new ResponseVO(true, "处理成功",user));
 	}
 
 	/**
@@ -112,14 +112,14 @@ public class UserController {
 	 * @return
 	 */
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<Response> delete(@PathVariable("id") Long id, Model model) {
+	public ResponseEntity<ResponseVO> delete(@PathVariable("id") Long id, Model model) {
         try {
             userService.removeUser(id);
         } catch (Exception e) {
-            return ResponseEntity.ok().body(new Response(false, e.getMessage()));
+            return ResponseEntity.ok().body(new ResponseVO(false, e.getMessage()));
         }
 
-        return ResponseEntity.ok().body(new Response(true, "处理成功"));
+        return ResponseEntity.ok().body(new ResponseVO(true, "处理成功"));
 	}
 
 

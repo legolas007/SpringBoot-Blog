@@ -11,13 +11,13 @@ import java.io.Serializable;
  * 菜单 值对象
  */
 @Data
-public class Menu implements Serializable {
+public class MenuVO implements Serializable {
 
     private static final long serialVersionUID = 5125446818215849983L;
 
     private String name;
     private String url;
-    public Menu(String name, String url) {
+    public MenuVO(String name, String url) {
         this.name = name;
         this.url = url;
     }

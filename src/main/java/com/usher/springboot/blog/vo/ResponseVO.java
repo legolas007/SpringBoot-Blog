@@ -5,7 +5,7 @@ package com.usher.springboot.blog.vo;
  * @Description:
  * 返回值前端格式
  */
-public class Response {
+public class ResponseVO {
     private boolean success;
     private String message;
     private Object body;
@@ -34,13 +34,13 @@ public class Response {
         this.body = body;
     }
 
-    public Response(boolean success, String message, Object body) {
+    public ResponseVO(boolean success, String message, Object body) {
         this.success = success;
         this.message = message;
         this.body = body;
     }
 
-    public Response(boolean success, String message) {
+    public ResponseVO(boolean success, String message) {
         this.success = success;
         this.message = message;
     }
