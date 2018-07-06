@@ -1,6 +1,7 @@
 package com.usher.springboot.blog.repository;
 
 import com.usher.springboot.blog.Entities.Blog;
+import com.usher.springboot.blog.Entities.Category;
 import com.usher.springboot.blog.Entities.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -28,4 +29,8 @@ public interface BlogRepository extends JpaRepository<Blog,Long> {
      * @return
      */
     Page<Blog> findByUserAndTitleLike(User user, String title, Pageable pageable);
+
+    Page<Blog> findByCategory(Category category, Pageable pageable);
+
+    Page<Blog> findByTitleLikeAndUserOrTagsLikeAndUserOrderByCreateTimeDesc(String title, User user, String tags, User user1, Pageable pageable);
 }

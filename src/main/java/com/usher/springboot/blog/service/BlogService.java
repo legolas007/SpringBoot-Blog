@@ -1,6 +1,7 @@
 package com.usher.springboot.blog.service;
 
 import com.usher.springboot.blog.Entities.Blog;
+import com.usher.springboot.blog.Entities.Category;
 import com.usher.springboot.blog.Entities.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -76,4 +77,10 @@ public interface BlogService {
     void createVote(Long blogId);
 
     void removeVote(Long blogId, Long id);
+
+    Page<Blog> listBlogsByCategory(Category category, Pageable pageable);
+
+    Page<Blog> listBlogsByTitleVoteAndSort(User user, String keyword, Pageable pageable);
+
+    Page<Blog> listBlogsByTitleVote(User user, String keyword, Pageable pageable);
 }

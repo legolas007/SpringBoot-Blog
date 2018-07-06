@@ -1,9 +1,6 @@
 package com.usher.springboot.blog.service.impl;
 
-import com.usher.springboot.blog.Entities.Blog;
-import com.usher.springboot.blog.Entities.Comment;
-import com.usher.springboot.blog.Entities.User;
-import com.usher.springboot.blog.Entities.Vote;
+import com.usher.springboot.blog.Entities.*;
 import com.usher.springboot.blog.repository.BlogRepository;
 import com.usher.springboot.blog.repository.VoteRepository;
 import com.usher.springboot.blog.service.BlogService;
@@ -113,5 +110,29 @@ public class BlogServiceImpl  implements BlogService {
         Blog blog = blogRepository.findOne(blogId);
         blog.removeVote(voteId);
         blogRepository.save(blog);
+    }
+
+    @Override
+    public Page<Blog> listBlogsByCategory(Category category, Pageable pageable) {
+        Page<Blog> blogs = blogRepository.findByCategory(category, pageable);
+        return blogs;
+    }
+
+    @Override
+    public Page<Blog> listBlogsByTitleVoteAndSort(User user, String title, Pageable pageable) {
+        // 模糊查询
+        title = "%" + title + "%";
+        Page<Blog> blogs = blogRepository.findByUserAndTitleLike(user, title, pageable);
+        return blogs;
+    }
+
+    @Override
+    public Page<Blog> listBlogsByTitleVote(User user, String title, Pageable pageable) {
+        // 模糊查询
+        title = "%" + title + "%";
+        //Page<Blog> blogs = blogRepository.findByUserAndTitleLikeOrderByCreateTimeDesc(user, title, pageable);
+        String tags = title;
+        Page<Blog> blogs = blogRepository.findByTitleLikeAndUserOrTagsLikeAndUserOrderByCreateTimeDesc(title,user, tags,user, pageable);
+        return blogs;
     }
 }

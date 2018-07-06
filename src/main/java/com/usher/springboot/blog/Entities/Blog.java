@@ -76,6 +76,12 @@ public class Blog implements Serializable {
             inverseJoinColumns = @JoinColumn(name = "vote_id", referencedColumnName = "id"))
     private List<Vote> votes;//many
 
+    @OneToOne(cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
+    @JoinColumn(name="category_id")
+    private Category category;
+
+    @Column(name="tags", length = 100)
+    private String tags;  // 标签
 
     protected Blog() {
         // TODO Auto-generated constructor stub
