@@ -22,18 +22,14 @@ public class AdminController {
 
     /**
      * 获取后台管理主页面
-     * @param model
      * @return
      */
     @GetMapping
     public ModelAndView listUsers(Model model) {
         List<MenuVO> list = new ArrayList<>();
         list.add(new MenuVO("用户管理", "/users"));
-        list.add(new MenuVO("角色管理", "/roles"));
-        list.add(new MenuVO("博客管理", "/blogs"));
-        list.add(new MenuVO("评论管理", "/commits"));
         model.addAttribute("list", list);
-        return new ModelAndView("/admins/index","model",model);
+        return new ModelAndView("/admins/index", "model", model);
     }
 
 }

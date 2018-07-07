@@ -3,9 +3,8 @@ package com.usher.springboot.blog.service;
 import com.usher.springboot.blog.Entities.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -38,7 +37,11 @@ public interface UserService {
      * @return
      */
     Page<User> listUsersByNameLike(String name, Pageable pageable);
-
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException;
+    /**
+     * 根据名称列表查询
+     * @param usernames
+     * @return
+     */
+    List<User> listUsersByUsernames(Collection<String> usernames);
 
 }

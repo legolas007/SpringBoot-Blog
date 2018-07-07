@@ -8,11 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,48 +29,46 @@ public class MainController {
     private UserService userService;
 
     @Autowired
-    private AuthorityService authorityService;
-
+    private AuthorityService  authorityService;
 
     @GetMapping("/")
-    public String root(){
+    public String root() {
         return "redirect:/index";
     }
 
     @GetMapping("/index")
-    public String index(){
-        return "index";
+    public String index() {
+        return "redirect:/blogs";
     }
 
+    /**
+     * 获取登录界面
+     * @return
+     */
     @GetMapping("/login")
     public String login() {
         return "login";
     }
 
     @GetMapping("/login-error")
-    public String loginError(Model model){
+    public String loginError(Model model) {
         model.addAttribute("loginError", true);
-        model.addAttribute("errorMsg", "登录失败");
+        model.addAttribute("errorMsg", "登陆失败，账号或者密码错误！");
         return "login";
     }
 
     @GetMapping("/register")
-    public String register(){
+    public String register() {
         return "register";
     }
 
     /**
-     * 注册
+     * 注册用户
      * @param user
      * @return
      */
     @PostMapping("/register")
-    public String registerUser(@Valid User user,
-                               BindingResult bindingResult) {
-
-        if (bindingResult.hasErrors()) {
-            log.error("参数错误！");
-        }
+    public String registerUser(User user) {
         List<Authority> authorities = new ArrayList<>();
         authorities.add(authorityService.getAuthorityById(ROLE_USER_AUTHORITY_ID));
         user.setAuthorities(authorities);
