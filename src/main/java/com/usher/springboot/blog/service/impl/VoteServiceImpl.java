@@ -1,31 +1,31 @@
 package com.usher.springboot.blog.service.impl;
 
-import com.usher.springboot.blog.Entities.Vote;
+import javax.transaction.Transactional;
+
+import com.usher.springboot.blog.entities.Vote;
 import com.usher.springboot.blog.repository.VoteRepository;
 import com.usher.springboot.blog.service.VoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-
 /**
- * @Author: Usher
- * @Description:
+ * Vote 服务.
+ *
  */
 @Service
 public class VoteServiceImpl implements VoteService {
 
-    @Autowired
-    private VoteRepository voteRepository;
+	@Autowired
+	private VoteRepository voteRepository;
 
-    @Override
-    public Vote getVoteById(Long id) {
-        return voteRepository.findOne(id);
-    }
+	@Override
+	@Transactional
+	public void removeVote(Long id) {
+		voteRepository.delete(id);
+	}
+	@Override
+	public Vote getVoteById(Long id) {
+		return voteRepository.findOne(id);
+	}
 
-    @Transactional
-    @Override
-    public void removeVote(Long id) {
-        voteRepository.delete(id);
-    }
 }

@@ -69,7 +69,7 @@
                             <div class="col-lg-12">
 								<span th:each="user: ${users}" th:object="${user}">
 				                  <a href="/u/usherblog" th:href="'/u/' + *{username}" title="usherblog" th:title="*{username}">
-				                    <img src="../static/images/avatar-defualt.jpg" th:src="*{avatar} == null ? '/images/avatar-defualt.jpg' : *{avatar}" class="blog-avatar-50">
+				                    <img src="/images/avatar-defualt.jpg" th:src="*{avatar} == null ? '/images/avatar-defualt.jpg' : *{avatar}" class="blog-avatar-50">
 				                  </a>
 				                </span>
                             </div>
@@ -114,7 +114,7 @@
 <div th:replace="~{fragments/footer :: footer}">...</div>
 
 <!-- JavaScript -->
-<script src="../static/js/index.js" th:src="@{/js/index.js}"></script>
+<script src="../../js/index.js" th:src="@{/js/index.js}"></script>
 
 
 </body>

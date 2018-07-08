@@ -1,17 +1,16 @@
 package com.usher.springboot.blog.service;
 
-import com.usher.springboot.blog.Entities.Authority;
+import com.usher.springboot.blog.entities.Authority;
 
 /**
- * @Author: Usher
- * @Description:
+ * Authority 服务接口.
  */
 public interface AuthorityService {
-
-    /**
-     * 根据id获取Authority
-     * @param id
-     * @return
-     */
-    Authority getAuthorityById(Long id);
+	 
+	
+	/**
+	 * 根据id获取 Authority
+	 * @return
+	 */
+	Authority getAuthorityById(Long id);
 }

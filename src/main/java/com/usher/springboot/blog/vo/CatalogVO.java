@@ -1,30 +1,34 @@
 package com.usher.springboot.blog.vo;
 
-import com.usher.springboot.blog.Entities.Catalog;
-import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @Author: Usher
- * @Description:
- * 类别返回列表
- */
-@Data
+import com.usher.springboot.blog.entities.Catalog;
+
 public class CatalogVO implements Serializable {
 
+	private static final long serialVersionUID = -533979319158673684L;
+	
+	private String username;
+	private Catalog catalog;
+	
+	public CatalogVO() {
+	}
 
-    private static final long serialVersionUID = -5257075951771468196L;
+	public String getUsername() {
+		return username;
+	}
 
-    private String username;
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    private Catalog catalog;
+	public Catalog getCatalog() {
+		return catalog;
+	}
 
-    public CatalogVO() {
-    }
+	public void setCatalog(Catalog catalog) {
+		this.catalog = catalog;
+	}
 
-    public CatalogVO(String username, Catalog catalog) {
-        this.username = username;
-        this.catalog = catalog;
-    }
 }

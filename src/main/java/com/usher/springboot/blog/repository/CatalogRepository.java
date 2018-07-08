@@ -1,29 +1,30 @@
 package com.usher.springboot.blog.repository;
 
-import com.usher.springboot.blog.Entities.Catalog;
-import com.usher.springboot.blog.Entities.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.usher.springboot.blog.entities.Catalog;
+import com.usher.springboot.blog.entities.User;
+
 /**
- * @Author: Usher
- * @Description:
+ * Catalog 仓库.
+ *
  */
-public interface CatalogRepository extends JpaRepository<Catalog, Long> {
-
-    /**
-     * 通过user查找
-     * @param user
-     * @return
-     */
-    List<Catalog> findByUser(User user);
-
-    /**
-     * 通过user和name查找
-     * @param user
-     * @param name
-     * @return
-     */
-    List<Catalog> findByUserAndName(User user, String name);
+public interface CatalogRepository extends JpaRepository<Catalog, Long>{
+	
+	/**
+	 * 根据用户查询
+	 * @param user
+	 * @return
+	 */
+	List<Catalog> findByUser(User user);
+	
+	/**
+	 * 根据用户查询
+	 * @param user
+	 * @param name
+	 * @return
+	 */
+	List<Catalog> findByUserAndName(User user,String name);
 }

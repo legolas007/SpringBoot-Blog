@@ -29,10 +29,8 @@
         <appender-ref ref="file" />
     </root>
 
-    <!-- logback为java中的包 -->
-    <logger name="com.usher"/>
     <!--logback.LogbackDemo：类的全路径 -->
-    <logger name="com.usher.springboot.blog.Entities" level="trace" additivity="false">
+    <logger name="com.usher.springboot.blog" level="trace" additivity="false">
         <appender-ref ref="console"/>
     </logger>
 </configuration>

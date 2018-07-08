@@ -1,11 +1,13 @@
 package com.usher.springboot.blog.repository;
 
-import com.usher.springboot.blog.Entities.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.usher.springboot.blog.entities.Comment;
+
 /**
- * @Author: Usher
- * @Description:
+ * Comment 仓库.
+ *
  */
-public interface CommentRepository extends JpaRepository<Comment,Long> {
+public interface CommentRepository extends JpaRepository<Comment, Long>{
+ 
 }

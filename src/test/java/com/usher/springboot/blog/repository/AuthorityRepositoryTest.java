@@ -1,6 +1,6 @@
 package com.usher.springboot.blog.repository;
 
-import com.usher.springboot.blog.Entities.Authority;
+import com.usher.springboot.blog.entities.Authority;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

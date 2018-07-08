@@ -1,6 +1,5 @@
 /*!
  * index main JS.
- *
  */
 "use strict";
 //# sourceURL=index.js

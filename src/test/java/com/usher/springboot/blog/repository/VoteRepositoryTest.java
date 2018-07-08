@@ -1,6 +1,6 @@
 package com.usher.springboot.blog.repository;
 
-import com.usher.springboot.blog.Entities.Vote;
+import com.usher.springboot.blog.entities.Vote;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

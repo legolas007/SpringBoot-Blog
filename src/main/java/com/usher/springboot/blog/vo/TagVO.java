@@ -1,23 +1,37 @@
 package com.usher.springboot.blog.vo;
 
-import lombok.Data;
 
 import java.io.Serializable;
 
 /**
- * @Author: Usher
- * @Description:
+ * Tag 值对象.
  */
-@Data
 public class TagVO implements Serializable {
 
-    private static final long serialVersionUID = 5345682903317226547L;
+	private static final long serialVersionUID = 3395753987764581105L;
+	
+	private String name;
+	private Long count;
+	
+	public TagVO(String name, Long count) {
+		this.name = name;
+		this.count = count;
+	}
 
-    private String name;
-    private Long count;
+	public String getName() {
+		return name;
+	}
 
-    public TagVO(String name, Long count) {
-        this.name = name;
-        this.count = count;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Long getCount() {
+		return count;
+	}
+
+	public void setCount(Long count) {
+		this.count = count;
+	}
+ 
 }

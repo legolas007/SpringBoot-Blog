@@ -1,23 +1,22 @@
 package com.usher.springboot.blog.service;
 
-import com.usher.springboot.blog.Entities.Vote;
+import com.usher.springboot.blog.entities.Vote;
 
 /**
- * @Author: Usher
- * @Description:
+ * Vote 服务接口.
+ *
  */
 public interface VoteService {
-
-    /**
-     * 根据id获取Vote
-     * @param id
-     * @return
-     */
-    Vote getVoteById(Long id);
-
-    /**
-     * 删除Vote
-     * @param id
-     */
-    void removeVote(Long id);
+	/**
+	 * 根据id获取 Vote
+	 * @param id
+	 * @return
+	 */
+	Vote getVoteById(Long id);
+	/**
+	 * 删除Vote
+	 * @param id
+	 * @return
+	 */
+	void removeVote(Long id);
 }

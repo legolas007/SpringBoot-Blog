@@ -1,38 +1,61 @@
-package com.usher.springboot.blog.Entities;
+package com.usher.springboot.blog.entities;
 
-import lombok.Data;
-
-import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
 /**
- * @Author: Usher
- * @Description: 点赞
+ * Like 实体
+ *
  */
-@Entity
-@Data
+@Entity // 实体
 public class Vote implements Serializable {
+	private static final long serialVersionUID = 4189840866690669668L;
 
+	@Id // 主键
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // 自增长策略
+	private Long id; // 用户的唯一标识
+ 
+	@OneToOne(cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
+	@JoinColumn(name="user_id")
+	private User user;
+	
+	@Column(nullable = false) // 映射为字段，值不能为空
+	@org.hibernate.annotations.CreationTimestamp  // 由数据库自动创建时间
+	private Timestamp createTime;
+ 
+	protected Vote() {
+	}
+	
+	public Vote(User user) {
+		this.user = user;
+	}
+	
+	public Long getId() {
+		return id;
+	}
 
-    private static final long serialVersionUID = 695462917964019237L;
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @OneToOne(cascade = CascadeType.DETACH,fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
-
-    @Column(nullable = false)
-    @org.hibernate.annotations.CreationTimestamp  // 由数据库自动创建时间
-    private Timestamp createTime;
-
-    protected Vote() {
-    }
-
-    public Vote(User user) {
-        this.user = user;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+ 
+	public Timestamp getCreateTime() {
+		return createTime;
+	}
+ 
 }
