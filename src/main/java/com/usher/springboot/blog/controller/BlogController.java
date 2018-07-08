@@ -13,7 +13,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -24,7 +23,7 @@ import java.util.List;
  * 主页控制器
  */
 @Controller
-@RequestMapping(value = "/blogs",method = RequestMethod.GET)
+@RequestMapping("/blogs")
 public class BlogController {
 
     @Autowired
@@ -36,7 +35,7 @@ public class BlogController {
             @RequestParam(value="keyword",required=false,defaultValue="" ) String keyword,
             @RequestParam(value="async",required=false) boolean async,
             @RequestParam(value="pageIndex",required=false,defaultValue="0") int pageIndex,
-            @RequestParam(value="pageSize",required=false,defaultValue="10") int pageSize,
+            @RequestParam(value="pageSize",required=false,defaultValue="5") int pageSize,
             Model model) {
 
         Page<EsBlog> page = null;

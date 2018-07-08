@@ -1,5 +1,6 @@
 package com.usher.springboot.blog.repository.es;
 
+import com.usher.springboot.blog.Entities.es.EsBlog;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ public class EsBlogRepositoryTest {
 
     @Test
     public void findByBlogId() {
-        esBlogRepository.findByBlogId(1L);
+        EsBlog blog = esBlogRepository.findByBlogId(1L);
+        System.out.println(blog.getContent());
     }
 }

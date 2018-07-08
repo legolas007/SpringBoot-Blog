@@ -33,7 +33,7 @@ import java.util.List;
  * 用户主页空间控制器
  */
 @Controller
-@RequestMapping(value = "/u")
+@RequestMapping("/u")
 public class UserspaceController {
 
     @Autowired

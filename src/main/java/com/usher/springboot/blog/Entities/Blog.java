@@ -1,5 +1,6 @@
 package com.usher.springboot.blog.Entities;
 
+import com.github.rjeschke.txtmark.Processor;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.elasticsearch.annotations.Document;
@@ -19,8 +20,7 @@ import java.util.List;
 @Data
 @Document(indexName = "blog", type = "blog")
 public class Blog implements Serializable {
-    private static final long serialVersionUID = 1L;
-
+    private static final long serialVersionUID = -4294255478738742140L;
     @Id // 主键
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 自增长策略
     private Long id; // 用户的唯一标识
@@ -93,6 +93,78 @@ public class Blog implements Serializable {
         this.content = content;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+        this.htmlContent = Processor.process(content);//markdown解析
+    }
+    public User getUser() {
+        return user;
+    }
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Timestamp getCreateTime() {
+        return createTime;
+    }
+
+    public String getHtmlContent() {
+        return htmlContent;
+    }
+    public Integer getReadSize() {
+        return readSize;
+    }
+    public void setReadSize(Integer readSize) {
+        this.readSize = readSize;
+    }
+    public Integer getCommentSize() {
+        return commentSize;
+    }
+    public void setCommentSize(Integer commentSize) {
+        this.commentSize = commentSize;
+    }
+    public Integer getVoteSize() {
+        return voteSize;
+    }
+    public void setVoteSize(Integer voteSize) {
+        this.voteSize = voteSize;
+    }
+    public List<Comment> getComments() {
+        return comments;
+    }
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+        this.commentSize = this.comments.size();
+    }
+
     /**
      * 添加评论
      * @param comment
@@ -103,7 +175,6 @@ public class Blog implements Serializable {
     }
     /**
      * 删除评论
-     * @param commentId
      */
     public void removeComment(Long commentId) {
         for (int index=0; index < this.comments.size(); index ++ ) {
@@ -123,9 +194,8 @@ public class Blog implements Serializable {
      */
     public boolean addVote(Vote vote) {
         boolean isExist = false;
-
-        //判断重复
-        for (int index = 0; index < this.votes.size(); index++) {
+        // 判断重复
+        for (int index=0; index < this.votes.size(); index ++ ) {
             if (this.votes.get(index).getUser().getId() == vote.getUser().getId()) {
                 isExist = true;
                 break;
@@ -139,13 +209,11 @@ public class Blog implements Serializable {
 
         return isExist;
     }
-
     /**
      * 取消点赞
      * @param voteId
      */
     public void removeVote(Long voteId) {
-
         for (int index=0; index < this.votes.size(); index ++ ) {
             if (this.votes.get(index).getId() == voteId) {
                 this.votes.remove(index);
@@ -154,5 +222,24 @@ public class Blog implements Serializable {
         }
 
         this.voteSize = this.votes.size();
+    }
+    public List<Vote> getVotes() {
+        return votes;
+    }
+    public void setVotes(List<Vote> votes) {
+        this.votes = votes;
+        this.voteSize = this.votes.size();
+    }
+    public String getTags() {
+        return tags;
+    }
+    public void setTags(String tags) {
+        this.tags = tags;
+    }
+    public Catalog getCatalog() {
+        return catalog;
+    }
+    public void setCatalog(Catalog catalog) {
+        this.catalog = catalog;
     }
 }
