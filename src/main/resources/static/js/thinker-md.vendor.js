@@ -7491,7 +7491,7 @@ hljs.registerLanguage('puppet', function (hljs) {
         'ia_load_module members system host_aliases ip allowed_trunk_vlans description device_url duplex encapsulation etherchannel ' +
         'native_vlan speed principals allow_root auth_class auth_type authenticate_user k_of_n mechanisms rule session_owner shared options ' +
         'device fstype enable hasrestart directory present absent link atboot blockdevice device dump pass remounts poller_tag use ' +
-        'message withpath adminfile allow_virtual allowcdrom category configfiles flavor install_options instance package_settings platform ' +
+        'message withpath adminfile allow_virtual allowcdrom catalog configfiles flavor install_options instance package_settings platform ' +
         'responsefile status uninstall_options vendor unless_system_user unless_uid binary control flags hasstatus manifest pattern restart running ' +
         'start stop allowdupe auths expiry gid groups home iterations key_membership keys managehome membership password password_max_age ' +
         'password_min_age profile_membership profiles project purge_ssh_keys role_membership roles salt shell uid baseurl cost descr enabled ' +

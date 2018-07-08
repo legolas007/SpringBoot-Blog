@@ -11,7 +11,7 @@
 23:50:47.160 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 23:50:47.165 logback [main] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'com.usher.springboot.blog'. Automatic @Repository and @Entity scanning is enabled.
 23:50:47.219 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.VoteRepository.
-23:50:47.223 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.CategoryRepository.
+23:50:47.223 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.CatalogRepository.
 23:50:47.226 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.AuthorityRepository.
 23:50:47.228 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.CommentRepository.
 23:50:47.231 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.UserRepository.
@@ -77,7 +77,7 @@
 23:50:55.525 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blogs/newest],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.BlogController.listNewestEsBlogs(org.springframework.ui.Model)
 23:50:55.525 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blogs],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.BlogController.listEsBlogs(java.lang.String,java.lang.String,boolean,int,int,org.springframework.ui.Model)
 23:50:55.528 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.delete(java.lang.String,java.lang.Long)
-23:50:55.529 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.create(com.usher.springboot.blog.vo.CategoryVO)
+23:50:55.529 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.create(com.usher.springboot.blog.vo.CatalogVO)
 23:50:55.529 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/edit],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.getCatalogEdit(org.springframework.ui.Model)
 23:50:55.529 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/edit/{id}],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.getCatalogById(java.lang.Long,org.springframework.ui.Model)
 23:50:55.529 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.listComments(java.lang.String,org.springframework.ui.Model)
@@ -1011,7 +1011,7 @@ Unconditional classes:
 23:51:07.108 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 23:51:07.112 logback [main] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'com.usher.springboot.blog'. Automatic @Repository and @Entity scanning is enabled.
 23:51:07.154 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.VoteRepository.
-23:51:07.157 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.CategoryRepository.
+23:51:07.157 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.CatalogRepository.
 23:51:07.159 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.AuthorityRepository.
 23:51:07.161 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.CommentRepository.
 23:51:07.163 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.usher.springboot.blog.repository.UserRepository.
@@ -1071,7 +1071,7 @@ Unconditional classes:
 23:51:10.183 logback [main] DEBUG org.hibernate.SQL - alter table blog_comment drop foreign key FKb9cpog8ie2cyapsyyt7gikpbl
 23:51:10.203 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote drop foreign key FK4bkj28o189fk8jic0snsjfj2h
 23:51:10.239 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote drop foreign key FKaar8kqti49vaol2nw9e42lgxc
-23:51:10.262 logback [main] DEBUG org.hibernate.SQL - alter table category drop foreign key FKpfk8djhv5natgshmxiav6xkpu
+23:51:10.262 logback [main] DEBUG org.hibernate.SQL - alter table catalog drop foreign key FKpfk8djhv5natgshmxiav6xkpu
 23:51:10.312 logback [main] DEBUG org.hibernate.SQL - alter table comment drop foreign key FK8kcum44fvpupyw6f5baccx25c
 23:51:10.348 logback [main] DEBUG org.hibernate.SQL - alter table user_authority drop foreign key FKgvxjs381k6f48d5d2yi11uh89
 23:51:10.387 logback [main] DEBUG org.hibernate.SQL - alter table user_authority drop foreign key FKpqlsjpkybgos9w2svcri7j8xy
@@ -1080,7 +1080,7 @@ Unconditional classes:
 23:51:10.464 logback [main] DEBUG org.hibernate.SQL - drop table if exists blog
 23:51:10.494 logback [main] DEBUG org.hibernate.SQL - drop table if exists blog_comment
 23:51:10.517 logback [main] DEBUG org.hibernate.SQL - drop table if exists blog_vote
-23:51:10.539 logback [main] DEBUG org.hibernate.SQL - drop table if exists category
+23:51:10.539 logback [main] DEBUG org.hibernate.SQL - drop table if exists catalog
 23:51:10.567 logback [main] DEBUG org.hibernate.SQL - drop table if exists comment
 23:51:10.595 logback [main] DEBUG org.hibernate.SQL - drop table if exists user
 23:51:10.628 logback [main] DEBUG org.hibernate.SQL - drop table if exists user_authority
@@ -1089,7 +1089,7 @@ Unconditional classes:
 23:51:10.798 logback [main] DEBUG org.hibernate.SQL - create table blog (id bigint not null auto_increment, comment_size integer, content longtext not null, create_time datetime not null, html_content longtext not null, read_size integer, summary varchar(300) not null, tags varchar(100), title varchar(50) not null, vote_size integer, category_id bigint, user_id bigint, primary key (id))
 23:51:10.858 logback [main] DEBUG org.hibernate.SQL - create table blog_comment (blog_id bigint not null, comment_id bigint not null)
 23:51:10.920 logback [main] DEBUG org.hibernate.SQL - create table blog_vote (blog_id bigint not null, vote_id bigint not null)
-23:51:10.981 logback [main] DEBUG org.hibernate.SQL - create table category (id bigint not null auto_increment, name varchar(30) not null, user_id bigint, primary key (id))
+23:51:10.981 logback [main] DEBUG org.hibernate.SQL - create table catalog (id bigint not null auto_increment, name varchar(30) not null, user_id bigint, primary key (id))
 23:51:11.046 logback [main] DEBUG org.hibernate.SQL - create table comment (id bigint not null auto_increment, content varchar(500) not null, create_time datetime not null, user_id bigint, primary key (id))
 23:51:11.113 logback [main] DEBUG org.hibernate.SQL - create table user (id bigint not null auto_increment, avatar varchar(200), email varchar(50) not null, name varchar(20) not null, password varchar(100) not null, username varchar(20) not null, primary key (id))
 23:51:11.194 logback [main] DEBUG org.hibernate.SQL - create table user_authority (user_id bigint not null, authority_id bigint not null)
@@ -1098,13 +1098,13 @@ Unconditional classes:
 23:51:11.518 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote add constraint UK_nmdrm82d80oq7pw0ab20pia23 unique (vote_id)
 23:51:11.703 logback [main] DEBUG org.hibernate.SQL - alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)
 23:51:11.789 logback [main] DEBUG org.hibernate.SQL - alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)
-23:51:11.833 logback [main] DEBUG org.hibernate.SQL - alter table blog add constraint FKqyvjif1i2geaeuvkh3n1jrnn4 foreign key (category_id) references category (id)
+23:51:11.833 logback [main] DEBUG org.hibernate.SQL - alter table blog add constraint FKqyvjif1i2geaeuvkh3n1jrnn4 foreign key (category_id) references catalog (id)
 23:51:12.017 logback [main] DEBUG org.hibernate.SQL - alter table blog add constraint FKpxk2jtysqn41oop7lvxcp6dqq foreign key (user_id) references user (id)
 23:51:12.202 logback [main] DEBUG org.hibernate.SQL - alter table blog_comment add constraint FKc4ysudanwhfrrhytio0272sx9 foreign key (comment_id) references comment (id)
 23:51:12.374 logback [main] DEBUG org.hibernate.SQL - alter table blog_comment add constraint FKb9cpog8ie2cyapsyyt7gikpbl foreign key (blog_id) references blog (id)
 23:51:12.567 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote add constraint FK4bkj28o189fk8jic0snsjfj2h foreign key (vote_id) references vote (id)
 23:51:12.836 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote add constraint FKaar8kqti49vaol2nw9e42lgxc foreign key (blog_id) references blog (id)
-23:51:13.081 logback [main] DEBUG org.hibernate.SQL - alter table category add constraint FKpfk8djhv5natgshmxiav6xkpu foreign key (user_id) references user (id)
+23:51:13.081 logback [main] DEBUG org.hibernate.SQL - alter table catalog add constraint FKpfk8djhv5natgshmxiav6xkpu foreign key (user_id) references user (id)
 23:51:13.325 logback [main] DEBUG org.hibernate.SQL - alter table comment add constraint FK8kcum44fvpupyw6f5baccx25c foreign key (user_id) references user (id)
 23:51:13.515 logback [main] DEBUG org.hibernate.SQL - alter table user_authority add constraint FKgvxjs381k6f48d5d2yi11uh89 foreign key (authority_id) references authority (id)
 23:51:13.795 logback [main] DEBUG org.hibernate.SQL - alter table user_authority add constraint FKpqlsjpkybgos9w2svcri7j8xy foreign key (user_id) references user (id)
@@ -1122,7 +1122,7 @@ Unconditional classes:
 23:51:17.945 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blogs/newest],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.BlogController.listNewestEsBlogs(org.springframework.ui.Model)
 23:51:17.945 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blogs],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.BlogController.listEsBlogs(java.lang.String,java.lang.String,boolean,int,int,org.springframework.ui.Model)
 23:51:17.947 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.delete(java.lang.String,java.lang.Long)
-23:51:17.948 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.create(com.usher.springboot.blog.vo.CategoryVO)
+23:51:17.948 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.create(com.usher.springboot.blog.vo.CatalogVO)
 23:51:17.948 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.listComments(java.lang.String,org.springframework.ui.Model)
 23:51:17.948 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/edit/{id}],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.getCatalogById(java.lang.Long,org.springframework.ui.Model)
 23:51:17.948 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/edit],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.getCatalogEdit(org.springframework.ui.Model)

@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.List;
  * 主页控制器
  */
 @Controller
-@RequestMapping("/blogs")
+@RequestMapping(value = "/blogs",method = RequestMethod.GET)
 public class BlogController {
 
     @Autowired

@@ -45,7 +45,7 @@
             <div class="card ">
  				<h5 class="card-header"><i class="fa fa-cog" aria-hidden="true"></i> 个人设置</h5>
                     <div class="card-block">
-						<form th:action="@{/u/admin/profile}" method="post" th:object="${userModel.user}" id="userForm">
+						<form th:action="'/u/'+${userModel.user.username}+'/profile'" method="post" th:object="${userModel.user}" id="userForm">
 							<input type="hidden" name="id" id="userId" th:value="*{id}" >
 							
 							<div class="form-group ">
@@ -107,7 +107,7 @@
 
  
 <!-- JavaScript -->
-<script src="../../js/userspace/main.js" th:src="@{/js/userspace/main.js}"></script>
+<script src="../../static/js/userspace/main.js" th:src="@{/js/userspace/main.js}"></script>
 
 </body>
 </html>

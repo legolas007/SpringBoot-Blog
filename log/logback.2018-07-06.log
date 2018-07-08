@@ -116,7 +116,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKqyvjif1i2geaeuvkh3n1j
 21:22:05.161 logback [main] DEBUG org.hibernate.SQL - alter table blog_comment drop foreign key FKb9cpog8ie2cyapsyyt7gikpbl
 21:22:05.185 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote drop foreign key FK4bkj28o189fk8jic0snsjfj2h
 21:22:05.220 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote drop foreign key FKaar8kqti49vaol2nw9e42lgxc
-21:22:05.256 logback [main] DEBUG org.hibernate.SQL - alter table category drop foreign key FKpfk8djhv5natgshmxiav6xkpu
+21:22:05.256 logback [main] DEBUG org.hibernate.SQL - alter table catalog drop foreign key FKpfk8djhv5natgshmxiav6xkpu
 21:22:05.259 logback [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
@@ -155,7 +155,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL vi
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
 	at com.usher.springboot.blog.Application.main(Application.java:14)
-Caused by: java.sql.SQLSyntaxErrorException: Table 'blog.category' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Table 'blog.catalog' doesn't exist
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
@@ -179,7 +179,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'blog.category' doesn't exist
 21:22:05.475 logback [main] DEBUG org.hibernate.SQL - drop table if exists blog
 21:22:05.512 logback [main] DEBUG org.hibernate.SQL - drop table if exists blog_comment
 21:22:05.547 logback [main] DEBUG org.hibernate.SQL - drop table if exists blog_vote
-21:22:05.577 logback [main] DEBUG org.hibernate.SQL - drop table if exists category
+21:22:05.577 logback [main] DEBUG org.hibernate.SQL - drop table if exists catalog
 21:22:05.580 logback [main] DEBUG org.hibernate.SQL - drop table if exists comment
 21:22:05.609 logback [main] DEBUG org.hibernate.SQL - drop table if exists user
 21:22:05.655 logback [main] DEBUG org.hibernate.SQL - drop table if exists user_authority
@@ -188,7 +188,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'blog.category' doesn't exist
 21:22:05.772 logback [main] DEBUG org.hibernate.SQL - create table blog (id bigint not null auto_increment, comment_size integer, content longtext not null, create_time datetime not null, html_content longtext not null, read_size integer, summary varchar(300) not null, tags varchar(100), title varchar(50) not null, vote_size integer, category_id bigint, user_id bigint, primary key (id))
 21:22:05.835 logback [main] DEBUG org.hibernate.SQL - create table blog_comment (blog_id bigint not null, comment_id bigint not null)
 21:22:05.960 logback [main] DEBUG org.hibernate.SQL - create table blog_vote (blog_id bigint not null, vote_id bigint not null)
-21:22:06.013 logback [main] DEBUG org.hibernate.SQL - create table category (id bigint not null auto_increment, name varchar(30) not null, user_id bigint, primary key (id))
+21:22:06.013 logback [main] DEBUG org.hibernate.SQL - create table catalog (id bigint not null auto_increment, name varchar(30) not null, user_id bigint, primary key (id))
 21:22:06.068 logback [main] DEBUG org.hibernate.SQL - create table comment (id bigint not null auto_increment, content varchar(500) not null, create_time datetime not null, user_id bigint, primary key (id))
 21:22:06.123 logback [main] DEBUG org.hibernate.SQL - create table user (id bigint not null auto_increment, avatar varchar(200), email varchar(50) not null, name varchar(20) not null, password varchar(100) not null, username varchar(20) not null, primary key (id))
 21:22:06.183 logback [main] DEBUG org.hibernate.SQL - create table user_authority (user_id bigint not null, authority_id bigint not null)
@@ -197,13 +197,13 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'blog.category' doesn't exist
 21:22:06.466 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote add constraint UK_nmdrm82d80oq7pw0ab20pia23 unique (vote_id)
 21:22:06.589 logback [main] DEBUG org.hibernate.SQL - alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)
 21:22:06.632 logback [main] DEBUG org.hibernate.SQL - alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)
-21:22:06.677 logback [main] DEBUG org.hibernate.SQL - alter table blog add constraint FKqyvjif1i2geaeuvkh3n1jrnn4 foreign key (category_id) references category (id)
+21:22:06.677 logback [main] DEBUG org.hibernate.SQL - alter table blog add constraint FKqyvjif1i2geaeuvkh3n1jrnn4 foreign key (category_id) references catalog (id)
 21:22:06.877 logback [main] DEBUG org.hibernate.SQL - alter table blog add constraint FKpxk2jtysqn41oop7lvxcp6dqq foreign key (user_id) references user (id)
 21:22:07.019 logback [main] DEBUG org.hibernate.SQL - alter table blog_comment add constraint FKc4ysudanwhfrrhytio0272sx9 foreign key (comment_id) references comment (id)
 21:22:07.153 logback [main] DEBUG org.hibernate.SQL - alter table blog_comment add constraint FKb9cpog8ie2cyapsyyt7gikpbl foreign key (blog_id) references blog (id)
 21:22:07.293 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote add constraint FK4bkj28o189fk8jic0snsjfj2h foreign key (vote_id) references vote (id)
 21:22:07.415 logback [main] DEBUG org.hibernate.SQL - alter table blog_vote add constraint FKaar8kqti49vaol2nw9e42lgxc foreign key (blog_id) references blog (id)
-21:22:07.563 logback [main] DEBUG org.hibernate.SQL - alter table category add constraint FKpfk8djhv5natgshmxiav6xkpu foreign key (user_id) references user (id)
+21:22:07.563 logback [main] DEBUG org.hibernate.SQL - alter table catalog add constraint FKpfk8djhv5natgshmxiav6xkpu foreign key (user_id) references user (id)
 21:22:07.779 logback [main] DEBUG org.hibernate.SQL - alter table comment add constraint FK8kcum44fvpupyw6f5baccx25c foreign key (user_id) references user (id)
 21:22:08.017 logback [main] DEBUG org.hibernate.SQL - alter table user_authority add constraint FKgvxjs381k6f48d5d2yi11uh89 foreign key (authority_id) references authority (id)
 21:22:08.193 logback [main] DEBUG org.hibernate.SQL - alter table user_authority add constraint FKpqlsjpkybgos9w2svcri7j8xy foreign key (user_id) references user (id)
@@ -216,7 +216,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'blog.category' doesn't exist
 21:22:11.032 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admins],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.usher.springboot.blog.controller.AdminController.listUsers(org.springframework.ui.Model)
 21:22:11.033 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blogs],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.BlogController.listBlogs(java.lang.String,java.lang.Long)
 21:22:11.037 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.delete(java.lang.String,java.lang.Long)
-21:22:11.037 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.create(com.usher.springboot.blog.vo.CategoryVO)
+21:22:11.037 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.usher.springboot.blog.vo.ResponseVO> com.usher.springboot.blog.controller.CategoryController.create(com.usher.springboot.blog.vo.CatalogVO)
 21:22:11.038 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.listComments(java.lang.String,org.springframework.ui.Model)
 21:22:11.038 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/edit/{id}],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.getCatalogById(java.lang.Long,org.springframework.ui.Model)
 21:22:11.038 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/catalogs/edit],methods=[GET]}" onto public java.lang.String com.usher.springboot.blog.controller.CategoryController.getCatalogEdit(org.springframework.ui.Model)

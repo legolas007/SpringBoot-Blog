@@ -1,10 +1,10 @@
 package com.usher.springboot.blog.controller;
 
 import com.usher.springboot.blog.Entities.Blog;
-import com.usher.springboot.blog.Entities.Category;
+import com.usher.springboot.blog.Entities.Catalog;
 import com.usher.springboot.blog.Entities.User;
 import com.usher.springboot.blog.service.BlogService;
-import com.usher.springboot.blog.service.CategoryService;
+import com.usher.springboot.blog.service.CatalogService;
 import com.usher.springboot.blog.service.UserService;
 import com.usher.springboot.blog.util.ConstraintViolationExceptionHandler;
 import com.usher.springboot.blog.vo.ResponseVO;
@@ -33,7 +33,7 @@ import java.util.List;
  * 用户主页空间控制器
  */
 @Controller
-@RequestMapping("/u")
+@RequestMapping(value = "/u")
 public class UserspaceController {
 
     @Autowired
@@ -46,7 +46,7 @@ public class UserspaceController {
     private BlogService blogService;
 
     @Autowired
-    private CategoryService categoryService;
+    private CatalogService catalogService;
 
     @GetMapping("/{username}")
     public String userSpace(@PathVariable("username") String username, Model model) {
@@ -133,14 +133,14 @@ public class UserspaceController {
      * 博客
      * @param username
      * @param order
-     * @param categoryId
+     * @param CatalogId
      * @param keyword
      * @return
      */
     @GetMapping("/{username}/blogs")
     public String listBlogsByOrder(@PathVariable("username") String username,
                                    @RequestParam(value="order",required=false,defaultValue="new") String order,
-                                   @RequestParam(value="catalog",required=false ) Long categoryId,
+                                   @RequestParam(value="catalog",required=false ) Long CatalogId,
                                    @RequestParam(value="keyword",required=false,defaultValue="" ) String keyword,
                                    @RequestParam(value="async",required=false) boolean async,
                                    @RequestParam(value="pageIndex",required=false,defaultValue="0") int pageIndex,
@@ -150,10 +150,10 @@ public class UserspaceController {
 
         Page<Blog> page = null;
 
-        if (categoryId != null && categoryId > 0) { // 分类查询
-            Category category = categoryService.getCategoryById(categoryId);
+        if (CatalogId != null && CatalogId > 0) { // 分类查询
+            Catalog catalog = catalogService.getCatalogById(CatalogId);
             Pageable pageable = new PageRequest(pageIndex, pageSize);
-            page = blogService.listBlogsByCategory(category, pageable);
+            page = blogService.listBlogsByCatalog(catalog, pageable);
             order = "";
         } else if (order.equals("hot")) { // 最热查询
             Sort sort = new Sort(Sort.Direction.DESC,"readSize","commentSize","voteSize");
@@ -169,7 +169,7 @@ public class UserspaceController {
 
         model.addAttribute("user", user);
         model.addAttribute("order", order);
-        model.addAttribute("catalogId", categoryId);
+        model.addAttribute("catalogId", CatalogId);
         model.addAttribute("keyword", keyword);
         model.addAttribute("page", page);
         model.addAttribute("blogList", list);
@@ -230,10 +230,10 @@ public class UserspaceController {
     @GetMapping("/{username}/blogs/edit")
     public ModelAndView createBlog(@PathVariable("username")String username, Model model) {
         User user = (User) userDetailsService.loadUserByUsername(username);
-        List<Category> categories = categoryService.listCategories(user);
+        List<Catalog> Catalogs = catalogService.listCatalogs(user);
 
         model.addAttribute("blog", new Blog(null, null, null));
-        model.addAttribute("catalogs", categories);
+        model.addAttribute("catalogs", Catalogs);
         return new ModelAndView("/userspace/blogedit", "blogModel", model);
     }
 
@@ -246,10 +246,10 @@ public class UserspaceController {
     public ModelAndView editBlog(@PathVariable("username") String username,@PathVariable("id") Long id, Model model) {
         //获取用户分类列表
         User user = (User) userDetailsService.loadUserByUsername(username);
-        List<Category> categories = categoryService.listCategories(user);
+        List<Catalog> Catalogs = catalogService.listCatalogs(user);
 
         model.addAttribute("blog", blogService.getBlogById(id));
-        model.addAttribute("catalogs", categories);
+        model.addAttribute("catalogs", Catalogs);
         return new ModelAndView("/userspace/blogedit", "blogModel", model);
     }
 
@@ -262,26 +262,24 @@ public class UserspaceController {
     @PostMapping("/{username}/blogs/edit")
     @PreAuthorize("authentication.name.equals(#username)")
     public ResponseEntity<ResponseVO> saveBlog(@PathVariable("username") String username, @RequestBody Blog blog) {
-
-        //如果分类为空
-        if (blog.getCategory().getId() == null) {
-            return ResponseEntity.ok().body(new ResponseVO(false, "未选择分类"));
+        // 对 Catalog 进行空处理
+        if (blog.getCatalog().getId() == null) {
+            return ResponseEntity.ok().body(new ResponseVO(false,"未选择分类"));
         }
-
-/*        User user = (User) userDetailsService.loadUserByUsername(username);
-        blog.setUser(user);*/
         try {
-            //修改还是新增
-            if (blog.getId() != null) {
+
+            // 判断是修改还是新增
+
+            if (blog.getId()!=null) {
                 Blog orignalBlog = blogService.getBlogById(blog.getId());
                 orignalBlog.setTitle(blog.getTitle());
                 orignalBlog.setContent(blog.getContent());
                 orignalBlog.setSummary(blog.getSummary());
-                orignalBlog.setCategory(blog.getCategory());
+                orignalBlog.setCatalog(blog.getCatalog());
                 orignalBlog.setTags(blog.getTags());
-                blogService.saveBlog(blog);
+                blogService.saveBlog(orignalBlog);
             } else {
-                User user = (User) userDetailsService.loadUserByUsername(username);
+                User user = (User)userDetailsService.loadUserByUsername(username);
                 blog.setUser(user);
                 blogService.saveBlog(blog);
             }

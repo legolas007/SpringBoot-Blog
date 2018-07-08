@@ -56,7 +56,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 
 	// https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring4
-	//compile('org.thymeleaf:thymeleaf-spring4:3.0.2.RELEASE')
+	compile('org.thymeleaf:thymeleaf-spring4:3.0.2.RELEASE')
 
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 
@@ -85,6 +85,5 @@ dependencies {
 	compile('net.java.dev.jna:jna:4.3.0')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-
 
 }

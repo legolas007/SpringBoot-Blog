@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.Assert.*;
 
 /**
  * @Author: Usher
@@ -25,6 +24,6 @@ public class EsBlogRepositoryTest {
 
     @Test
     public void findByBlogId() {
-
+        esBlogRepository.findByBlogId(1L);
     }
 }

@@ -26,7 +26,7 @@ import java.util.List;
  * 用户控制器.
  */
 @RestController
-@RequestMapping("/users")
+@RequestMapping(value = "/users",method = RequestMethod.GET)
 @PreAuthorize("hasAuthority('ROLE_ADMIN')") // 指定角色权限才能操作方法
 public class UserController {
 

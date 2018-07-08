@@ -1,8 +1,6 @@
 /*!
  * blogedit.html 页面脚本.
- * 
- * @since: 1.0.0 2017-03-26
- * @author Way Lau <https://waylau.com>
+ *
  */
 "use strict";
 //# sourceURL=blogedit.js
@@ -36,7 +34,7 @@ $(function() {
  
  	$("#uploadImage").click(function() {
 		$.ajax({
-		    url: 'http://localhost:8081/upload',
+		    url: '/images/upload',
 		    type: 'POST',
 		    cache: false,
 		    data: new FormData($('#uploadformid')[0]),

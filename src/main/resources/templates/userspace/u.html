@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <span>
-                      <a href="/u/waylau" th:href="'/u/' + ${user.username}" title="waylau" th:title="${user.username}" >
+                      <a href="/u/usherblog" th:href="'/u/' + ${user.username}" title="usherblog" th:title="${user.username}" >
                         <img th:src="${user.avatar} == null ? '/images/avatar-defualt.jpg' : ${user.avatar} " 
                          class="blog-avatar-230">
                       </a>
@@ -28,8 +28,8 @@
             <div class="row">
 
                 <div class="col-md-12">
-                    <h2 class="card-text" th:text="${user.name}">老卫</h2>
-                    <h4 class="card-text" th:text="${user.username}">waylau</h4>
+                    <h2 class="card-text" th:text="${user.name}">usher</h2>
+                    <h4 class="card-text" th:text="${user.username}">usherblog</h4>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
             <div class="row ">
                 <div class="col-md-12">
                     <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <a href="mailto:waylau521@gmail.com" th:href="'mailto:'+ ${user.email}" th:text="${user.email}">waylau521@gmail.com</a></h5>
+                        <a href="mailto:usherblog521@gmail.com" th:href="'mailto:'+ ${user.email}" th:text="${user.email}">usherblog521@gmail.com</a></h5>
                 </div>
             </div>
             
@@ -107,7 +107,7 @@
 		            <div class="card mb-4" th:each="blog : ${blogList}">
 		                <div class="card-block">
 		                 	<h2 class="card-title">
-		                        <a href="/u/waylau/blogs/1" class="card-link" title="waylau" 
+		                        <a href="/u/usherblog/blogs/1" class="card-link" title="usherblog" 
 		                        	th:href="'/u/' + ${blog.user.username} + '/blogs/'+ ${blog.id}"  th:title="${blog.user.username}" th:text="${blog.title}">
 		                            OAuth 2.0 认证的原理与实践
 		                        </a>
@@ -162,6 +162,6 @@
 var username = [[${user.username}]];
 var catalogId = [[${catalogId}]];
 </script>
-<script src="../../js/userspace/u.js" th:src="@{/js/userspace/u.js}"></script>
+<script src="../../static/js/userspace/u.js" th:src="@{/js/userspace/u.js}"></script>
 </body>
 </html>

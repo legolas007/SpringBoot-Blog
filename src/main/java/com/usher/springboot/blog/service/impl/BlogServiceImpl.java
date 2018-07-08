@@ -113,8 +113,8 @@ public class BlogServiceImpl  implements BlogService {
     }
 
     @Override
-    public Page<Blog> listBlogsByCategory(Category category, Pageable pageable) {
-        Page<Blog> blogs = blogRepository.findByCategory(category, pageable);
+    public Page<Blog> listBlogsByCatalog(Catalog catalog, Pageable pageable) {
+        Page<Blog> blogs = blogRepository.findByCatalog(catalog, pageable);
         return blogs;
     }
 

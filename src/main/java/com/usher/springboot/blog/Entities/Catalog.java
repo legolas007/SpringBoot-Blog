@@ -14,7 +14,7 @@ import java.io.Serializable;
  */
 @Entity
 @Data
-public class Category implements Serializable {
+public class Catalog implements Serializable {
 
     private static final long serialVersionUID = 3192813679438245410L;
 
@@ -31,10 +31,10 @@ public class Category implements Serializable {
     @Column(nullable = false)//映射字段
     private String name;
 
-    public Category() {
+    public Catalog() {
     }
 
-    public Category(User user, String name) {
+    public Catalog(User user, String name) {
         this.user = user;
         this.name = name;
     }

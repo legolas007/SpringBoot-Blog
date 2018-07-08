@@ -2,6 +2,7 @@ package com.usher.springboot.blog.Entities;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -16,8 +17,9 @@ import java.util.List;
  */
 @Entity
 @Data
+@Document(indexName = "blog", type = "blog")
 public class Blog implements Serializable {
-    private static final long serialVersionUID = 3545090694024681660L;
+    private static final long serialVersionUID = 1L;
 
     @Id // 主键
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 自增长策略
@@ -47,10 +49,8 @@ public class Blog implements Serializable {
     @Column(nullable = false) // 映射为字段，值不能为空
     private String htmlContent; // 将 md 转为 html
 
-
-
     @OneToOne(cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
-    @JoinColumn(name="user_id")//外键关联
+    @JoinColumn(name="user_id")
     private User user;
 
     @Column(nullable = false) // 映射为字段，值不能为空
@@ -58,7 +58,7 @@ public class Blog implements Serializable {
     private Timestamp createTime;
 
     @Column(name="readSize")
-    private Integer readSize = 0; // 访问量
+    private Integer readSize = 0; // 访问量、阅读量
 
     @Column(name="commentSize")
     private Integer commentSize = 0;  // 评论量
@@ -66,19 +66,20 @@ public class Blog implements Serializable {
     @Column(name="voteSize")
     private Integer voteSize = 0;  // 点赞量
 
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinTable(name = "blog_comment",joinColumns = @JoinColumn(name = "blog_id",referencedColumnName = "id"),
-    inverseJoinColumns = @JoinColumn(name = "comment_id", referencedColumnName = "id"))
-    private List<Comment> comments;//many
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "blog_comment", joinColumns = @JoinColumn(name = "blog_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "comment_id", referencedColumnName = "id"))
+    private List<Comment> comments;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "blog_vote", joinColumns = @JoinColumn(name = "blog_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "vote_id", referencedColumnName = "id"))
-    private List<Vote> votes;//many
+    private List<Vote> votes;
 
     @OneToOne(cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
-    @JoinColumn(name="category_id")
-    private Category category;
+    @JoinColumn(name="catalog_id")
+    private Catalog catalog;
 
     @Column(name="tags", length = 100)
     private String tags;  // 标签
@@ -115,6 +116,11 @@ public class Blog implements Serializable {
         this.commentSize = this.comments.size();
     }
 
+    /**
+     * 点赞
+     * @param vote
+     * @return
+     */
     public boolean addVote(Vote vote) {
         boolean isExist = false;
 
@@ -134,6 +140,10 @@ public class Blog implements Serializable {
         return isExist;
     }
 
+    /**
+     * 取消点赞
+     * @param voteId
+     */
     public void removeVote(Long voteId) {
 
         for (int index=0; index < this.votes.size(); index ++ ) {

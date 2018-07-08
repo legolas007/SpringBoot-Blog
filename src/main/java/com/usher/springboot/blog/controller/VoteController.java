@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.ConstraintViolationException;
 
@@ -22,6 +23,7 @@ import javax.validation.ConstraintViolationException;
  * 点赞控制器
  */
 @Controller
+@RequestMapping("/votes")
 public class VoteController {
 
     @Autowired

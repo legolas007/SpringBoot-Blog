@@ -1,6 +1,7 @@
-
-
-<div class="card-header bg-dark font-white">
+<div class="card-header bg-dark font-white"
+	 xmlns="http://www.w3.org/1999/xhtml"
+	 xmlns:th="http://www.thymeleaf.org"
+	 xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 
 	<div class="input-group col-md-7 col-xl-6">
 
@@ -35,9 +36,9 @@
 				<tr th:each="user : ${userModel.userList}">
 					<td th:text="${user.id}">1</td>
 					<td th:text="${user.username}">1</td>
-					<td th:text="${user.name}">waylau</td>
-					<td th:text="${user.email}">waylau</td>
-					<td th:text="${user.authorities}">waylau</td>
+					<td th:text="${user.name}">usherblog</td>
+					<td th:text="${user.email}">usherblog</td>
+					<td th:text="${user.authorities}">usherblog</td>
 					<td>
 						<div>
 							<a class="blog-edit-user" data-toggle="modal"
@@ -83,5 +84,5 @@
 </div>
 
 <!-- JavaScript -->
-<script src="../../js/users/main.js" th:src="@{/js/users/main.js}"></script>
+<script src="../../static/js/users/main.js" th:src="@{/js/users/main.js}"></script>
 

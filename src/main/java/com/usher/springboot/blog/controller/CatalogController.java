@@ -1,10 +1,10 @@
 package com.usher.springboot.blog.controller;
 
-import com.usher.springboot.blog.Entities.Category;
+import com.usher.springboot.blog.Entities.Catalog;
 import com.usher.springboot.blog.Entities.User;
-import com.usher.springboot.blog.service.CategoryService;
+import com.usher.springboot.blog.service.CatalogService;
 import com.usher.springboot.blog.util.ConstraintViolationExceptionHandler;
-import com.usher.springboot.blog.vo.CategoryVO;
+import com.usher.springboot.blog.vo.CatalogVO;
 import com.usher.springboot.blog.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,33 +24,30 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/catalogs")
-public class CategoryController {
+public class CatalogController {
 
     @Autowired
-    private CategoryService categoryService;
+    private CatalogService catalogService;
 
     @Autowired
     private UserDetailsService userDetailsService;
-
     /**
      * 获取分类列表
-     * @param username
      * @param model
      * @return
      */
     @GetMapping
-    public String listComments(@RequestParam(value = "username", required = true) String username, Model model) {
+    public String listComments(@RequestParam(value="username",required=true) String username, Model model) {
         User user = (User)userDetailsService.loadUserByUsername(username);
-        List<Category> catalogs = categoryService.listCategories(user);
+        List<Catalog> catalogs = catalogService.listCatalogs(user);
 
-        //判断操作用户是否是分类的所有者
+        // 判断操作用户是否是分类的所有者
         boolean isOwner = false;
 
-        if (SecurityContextHolder.getContext().getAuthentication() != null && SecurityContextHolder.getContext().getAuthentication().isAuthenticated()
-                && !SecurityContextHolder.getContext().getAuthentication().getPrincipal().toString().equals("anonymousUser")) {
-            User principal = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
-            if (principal != null && user.getUsername().equals(principal.getUsername())) {
+        if (SecurityContextHolder.getContext().getAuthentication() !=null && SecurityContextHolder.getContext().getAuthentication().isAuthenticated()
+                &&  !SecurityContextHolder.getContext().getAuthentication().getPrincipal().toString().equals("anonymousUser")) {
+            User principal = (User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            if (principal !=null && user.getUsername().equals(principal.getUsername())) {
                 isOwner = true;
             }
         }
@@ -58,25 +55,23 @@ public class CategoryController {
         model.addAttribute("isCatalogsOwner", isOwner);
         model.addAttribute("catalogs", catalogs);
         return "/userspace/u :: #catalogRepleace";
-
     }
-
     /**
-     * 创建
-     * @param categoryVO
+     * 发表分类
      * @return
      */
     @PostMapping
-    @PreAuthorize("authentication.name.equals(#categoryVO.username)")// 指定用户才能操作方法
-    public ResponseEntity<ResponseVO> create(@RequestBody CategoryVO categoryVO) {
-        String username = categoryVO.getUsername();
-        Category category = categoryVO.getCategory();
+    @PreAuthorize("authentication.name.equals(#catalogVO.username)")// 指定用户才能操作方法
+    public ResponseEntity<ResponseVO> create(@RequestBody CatalogVO catalogVO) {
 
-        User user = (User) userDetailsService.loadUserByUsername(username);
+        String username = catalogVO.getUsername();
+        Catalog catalog = catalogVO.getCatalog();
+
+        User user = (User)userDetailsService.loadUserByUsername(username);
 
         try {
-            category.setUser(user);
-            categoryService.saveCategory(category);
+            catalog.setUser(user);
+            catalogService.saveCatalog(catalog);
         } catch (ConstraintViolationException e)  {
             return ResponseEntity.ok().body(new ResponseVO(false, ConstraintViolationExceptionHandler.getMessage(e)));
         } catch (Exception e) {
@@ -87,17 +82,15 @@ public class CategoryController {
     }
 
     /**
-     * 删除
-     * @param username
-     * @param id
+     * 删除分类
      * @return
      */
     @DeleteMapping("/{id}")
-    @PreAuthorize("authentication.name.equals(#username)")
+    @PreAuthorize("authentication.name.equals(#username)")  // 指定用户才能操作方法
     public ResponseEntity<ResponseVO> delete(String username, @PathVariable("id") Long id) {
         try {
-            categoryService.removeCategory(id);
-        }catch (ConstraintViolationException e)  {
+            catalogService.removeCatalog(id);
+        } catch (ConstraintViolationException e)  {
             return ResponseEntity.ok().body(new ResponseVO(false, ConstraintViolationExceptionHandler.getMessage(e)));
         } catch (Exception e) {
             return ResponseEntity.ok().body(new ResponseVO(false, e.getMessage()));
@@ -105,6 +98,7 @@ public class CategoryController {
 
         return ResponseEntity.ok().body(new ResponseVO(true, "处理成功", null));
     }
+
     /**
      * 获取分类编辑界面
      * @param model
@@ -112,8 +106,8 @@ public class CategoryController {
      */
     @GetMapping("/edit")
     public String getCatalogEdit(Model model) {
-        Category category = new Category(null, null);
-        model.addAttribute("catalog",category);
+        Catalog catalog = new Catalog(null, null);
+        model.addAttribute("catalog",catalog);
         return "/userspace/catalogedit";
     }
     /**
@@ -124,8 +118,9 @@ public class CategoryController {
      */
     @GetMapping("/edit/{id}")
     public String getCatalogById(@PathVariable("id") Long id, Model model) {
-        Category catalog = categoryService.getCategoryById(id);
+        Catalog catalog = catalogService.getCatalogById(id);
         model.addAttribute("catalog",catalog);
         return "/userspace/catalogedit";
     }
+
 }

@@ -1,6 +1,6 @@
 package com.usher.springboot.blog.vo;
 
-import com.usher.springboot.blog.Entities.Category;
+import com.usher.springboot.blog.Entities.Catalog;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -11,20 +11,20 @@ import java.io.Serializable;
  * 类别返回列表
  */
 @Data
-public class CategoryVO implements Serializable {
+public class CatalogVO implements Serializable {
 
 
     private static final long serialVersionUID = -5257075951771468196L;
 
     private String username;
 
-    private Category category;
+    private Catalog catalog;
 
-    public CategoryVO() {
+    public CatalogVO() {
     }
 
-    public CategoryVO(String username, Category category) {
+    public CatalogVO(String username, Catalog catalog) {
         this.username = username;
-        this.category = category;
+        this.catalog = catalog;
     }
 }

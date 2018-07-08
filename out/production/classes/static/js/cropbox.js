@@ -1,3 +1,7 @@
+/*!
+ * 图片剪切 js.
+ *
+ */
 'use strict';
 
 (function (window, document, cropbox) {
