@@ -2,83 +2,185 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf28056c-0290-4803-ac33-c0bf88263cf0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/blog-prototype.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/blog-prototype.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/blog-prototype.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/blog-prototype.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.ApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.ApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.contrller.HelloControllerTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.repository.AuthorityRepositoryTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.repository.CatalogRepositoryTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.repository.UserRepositoryTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.repository.VoteRepositoryTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.service.VoteServiceTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.service.impl.AuthorityServiceImplTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.service.impl.BlogServiceImplTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.usher.springboot.blog.contrller.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.usher.springboot.blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.usher.springboot.blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.usher.springboot.blog.repository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.usher.springboot.blog.service.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.usher.springboot.blog.service.impl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.ApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.contrller.HelloControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.repository.AuthorityRepositoryTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.repository.CatalogRepositoryTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.repository.UserRepositoryTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.repository.VoteRepositoryTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.service.VoteServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.service.impl.AuthorityServiceImplTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.service.impl.BlogServiceImplTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-09.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logback.2018-07-09.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Authority.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Blog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Catalog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Vote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/es/EsBlog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/BlogController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/CatalogController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/CommentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/DockerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/UserspaceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/VoteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/AuthorityRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/BlogRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/CatalogRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/CommentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/VoteRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/es/EsBlogRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/AuthorityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/BlogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/CatalogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/CommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/EsBlogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/VoteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/BlogServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/CatalogServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/CommentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/VoteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/util/ConstraintViolationExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/CatalogVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/MenuVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/ResponseVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/TagVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/BlogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/CatalogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/DockerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/UserspaceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/controller/VoteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/entities/Authority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/entities/Blog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/entities/Catalog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/entities/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/entities/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/entities/Vote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/entities/es/EsBlog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/repository/AuthorityRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/repository/BlogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/repository/CatalogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/repository/CommentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/repository/VoteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/repository/es/EsBlogRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/AuthorityService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/BlogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/CatalogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/EsBlogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/VoteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/BlogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/CatalogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/CommentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/service/impl/VoteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/util/ConstraintViolationExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/vo/CatalogVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/vo/MenuVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/vo/ResponseVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/com/usher/springboot/blog/vo/TagVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/test/com/usher/springboot/blog/ApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/blog-prototype.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/blog-prototype.war.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.usher.springboot.blog.ApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.usher.springboot.blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap-table.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/component-chosen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/component-chosen.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/component-tageditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/component-tageditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/cropbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/emoji/Sysmbols.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/emoji/nature.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/emoji/object.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/emoji/people.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/emoji/place.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/emoji/twemoji.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/font-awesome.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/images/emoji/Sysmbols.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/images/emoji/nature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/images/emoji/object.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/images/emoji/people.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/images/emoji/place.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/images/emoji/twemoji.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/jquery.tagsinput.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/nprogress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether-theme-arrows-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether-theme-arrows-dark.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether-theme-arrows.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether-theme-arrows.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether-theme-basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether-theme-basic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/tether.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/thinker-md.vendor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/thymeleaf-bootstrap-paginator.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/toastr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/toastr.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/data/data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/gly-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/gly-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/gly-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/gly-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/gly-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/avatar-defualt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/images/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/admins/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/blogedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/catalog-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/chosen.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/cropbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/jquery-3.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/jquery.form.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/jquery.tag-editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/jquery.tag-editor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/jquery.tagsinput.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/nprogress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/tether.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/tether.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/thinker-md.vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/thinker-md.vendor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/thinker-md.vendor.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/thymeleaf-bootstrap-paginator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/toastr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/users/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/userspace/blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/userspace/blogedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/userspace/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/userspace/u.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/admins/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/fragments/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/fragments/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/fragments/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/users/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/users/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/users/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/users/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/users/view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userspace/avatar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userspace/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userspace/blogedit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userspace/catalogedit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userspace/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userspace/u.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.usher.springboot.blog.ApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -162,8 +264,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="361">
+              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -811,7 +913,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="951" />
     <option name="width" value="978" />
     <option name="height" value="1039" />
@@ -833,17 +935,6 @@
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -963,7 +1054,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.blog-prototype [build]">
+  <component name="RunManager" selected="Gradle.blog-prototype [clean]">
     <configuration name="Bean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.json.Bean" />
       <module name="blog-prototype_main" />
@@ -1147,7 +1238,7 @@
       <workItem from="1531119751637" duration="260000" />
       <workItem from="1531121071399" duration="5679000" />
       <workItem from="1531129971353" duration="1919000" />
-      <workItem from="1531137893593" duration="797000" />
+      <workItem from="1531137893593" duration="824000" />
     </task>
     <servers />
   </component>
@@ -1184,10 +1275,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140948000" />
+    <option name="totallyTimeSpent" value="140975000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1214,7 +1305,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16152816" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.32908848" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.32908848" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1458,8 +1549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="361">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
