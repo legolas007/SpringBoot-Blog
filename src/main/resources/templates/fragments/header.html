@@ -52,7 +52,7 @@
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="/" th:href="@{/}">NewStarBlog</a>
+        <a class="navbar-brand" href="/" th:href="@{/}">UsherBlog</a>
 
         <div class="collapse navbar-collapse" id="navbarsContainer">
 
@@ -72,9 +72,9 @@
             </ul>
             <div sec:authorize="isAuthenticated()"  class="row" >
 				<div class="dropdown">
-					<a class=" dropdown-toggle" href="/u/usherblog" th:href="@{'/u/' + ${#authentication.name}}" data-toggle="dropdown"><span sec:authentication="name"></span></a>
-					<div class="dropdown-menu" >
-						<a class=" dropdown-item" href="/u/usherblog" th:href="@{'/u/' + ${#authentication.name}}">个人主页</a> 
+					<a class=" dropdown-toggle btn  btn-outline-success my-2 my-sm-0" href="/u/usherblog" th:href="@{'/u/' + ${#authentication.name}}" data-toggle="dropdown">用户</a>
+					<div class="dropdown-menu" style="color: #3c763d">
+						<a class=" dropdown-item" href="/u/usherblog" th:href="@{'/u/' + ${#authentication.name}}" >个人主页</a>
 						<a class="dropdown-item" href="/u/usherblog/profile" th:href="@{'/u/' + ${#authentication.name}} + '/profile'" >个人设置</a>
 					</div>
 				</div>

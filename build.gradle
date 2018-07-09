@@ -32,14 +32,19 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
 
+/*
 // 打包的类型为 jar，并指定了生成的打包的文件名称和版本
 jar {
 	baseName = 'blog-prototype'
 	version = '1.0.0'
-}
+}*/
 
-// 指定编译 .java 文件的 JDK 版本
+war{
+    archiveName 'blog-prototype.war'
+    from 'SubprojectName/build/dist'
+}
 sourceCompatibility = 1.8
 
 // 默认使用了 Maven 的中央仓库。这里改用自定义的镜像库
@@ -52,6 +57,8 @@ repositories {
 
 // 依赖关系
 dependencies {
+
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 
 	compile('org.springframework.boot:spring-boot-starter-web')
 

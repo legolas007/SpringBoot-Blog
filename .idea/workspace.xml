@@ -2,190 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf28056c-0290-4803-ac33-c0bf88263cf0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/DockerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-08.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logback.2018-07-08.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-08.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Authority.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Blog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Catalog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Vote.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/Vote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/es/EsBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/Entities/es/EsBlog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/BlogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/CatalogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/CatalogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/UserspaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/UserspaceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/VoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/controller/VoteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/AuthorityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/AuthorityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/BlogRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/CatalogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/CatalogRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/CommentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/VoteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/VoteRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/es/EsBlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/repository/es/EsBlogRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/AuthorityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/AuthorityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/BlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/CatalogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/CatalogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/CustomUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/EsBlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/EsBlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/VoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/VoteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/CatalogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/CatalogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/CommentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/VoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/service/impl/VoteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/util/ConstraintViolationExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/util/ConstraintViolationExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/CatalogVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/CatalogVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/MenuVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/MenuVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/ResponseVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/ResponseVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/TagVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/usher/springboot/blog/vo/TagVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/admins/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/admins/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/cropbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/cropbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/thinker-md.vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/thinker-md.vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/thinker-md.vendor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/thinker-md.vendor.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/thymeleaf-bootstrap-paginator.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/thymeleaf-bootstrap-paginator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/users/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/users/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/userspace/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/userspace/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/userspace/blogedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/userspace/blogedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/userspace/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/userspace/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/static/js/userspace/u.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/static/js/userspace/u.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/admins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/admins/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/fragments/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/users/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/users/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/users/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/users/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/userspace/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/userspace/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/userspace/blogedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/userspace/blogedit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/userspace/catalogedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/userspace/catalogedit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/userspace/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/userspace/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/userspace/u.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/userspace/u.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/AuthorityRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/AuthorityRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/BlogRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/CommentRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/UserRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/VoteRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/VoteRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/es/EsBlogRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/VoteServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/VoteServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/BlogServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/BlogServiceImplTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/es/EsBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/es/EsBlog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CatalogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/VoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/AuthorityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/AuthorityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/BlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CatalogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CatalogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/VoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/VoteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/es/EsBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/repository/es/EsBlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/AuthorityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/AuthorityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CatalogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CustomUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/EsBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/EsBlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/VoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/VoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CatalogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CatalogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/VoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/VoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/util/ConstraintViolationExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/util/ConstraintViolationExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/CatalogVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/CatalogVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/MenuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/MenuVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/ResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/ResponseVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/TagVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/vo/TagVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/es/EsBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/es/EsBlog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/tether-theme-arrows-dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/tether-theme-arrows-dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/tether-theme-arrows.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/tether-theme-arrows.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/tether-theme-basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/tether-theme-basic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/tether.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/tether.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/thymeleaf-bootstrap-paginator.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/thymeleaf-bootstrap-paginator.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/admins/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/admins/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/catalog-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/catalog-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/chosen.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/chosen.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/cropbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/cropbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.form.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.form.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/tether.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tether.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/thinker-md.vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/thinker-md.vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/thinker-md.vendor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/thinker-md.vendor.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/thymeleaf-bootstrap-paginator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/thymeleaf-bootstrap-paginator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/users/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/users/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/userspace/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/userspace/blogedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/blogedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/userspace/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/userspace/u.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/userspace/u.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admins/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userspace/avatar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/avatar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userspace/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userspace/blogedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/blogedit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userspace/catalogedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/catalogedit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userspace/u.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userspace/u.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/AuthorityRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/AuthorityRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/BlogRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/VoteRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/VoteRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/es/EsBlogRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/VoteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/VoteServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/contrller/HelloControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/AuthorityRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CatalogRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/UserRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/VoteRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/VoteServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -240,32 +90,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="blog-prototype" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="blog-prototype" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="blog-prototype" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="blog-prototype" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="blog-prototype" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -283,87 +107,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/blog.html">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1499">
-              <caret line="79" column="139" selection-start-line="79" selection-start-column="139" selection-end-line="79" selection-end-column="139" />
+            <state relative-caret-position="232">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogedit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/blogedit.html">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalogedit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/catalogedit.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="399">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
-                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html">
+      <file leaf-file-name="ApplicationTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/ApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="114">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-427">
-              <caret line="70" column="103" selection-start-line="70" selection-start-column="103" selection-end-line="70" selection-end-column="103" />
+            <state relative-caret-position="361">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <file leaf-file-name="DockerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/DockerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1159">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="285">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="u.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/u.html">
+      <file leaf-file-name="UserspaceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-560">
-              <caret line="109" column="97" selection-start-line="109" selection-start-column="97" selection-end-line="109" selection-end-column="97" />
+            <state relative-caret-position="4940">
+              <caret line="295" column="4" selection-start-line="295" selection-start-column="4" selection-end-line="295" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vote.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Vote.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Comment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Catalog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Catalog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authority.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Authority.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="37" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -390,6 +235,8 @@
       <find>Categories</find>
       <find>Category</find>
       <find>waylau</find>
+      <find>写博客</find>
+      <find>New</find>
     </findStrings>
     <replaceStrings>
       <replace>http://ww1.sinaimg.cn/large/005P73H4ly1fst46ymva0j308w08wdgm.jpg</replace>
@@ -438,47 +285,13 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'blog-prototype'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'blog-prototype'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Cleans all Eclipse files." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipse" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'blog-prototype'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'blog-prototype'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipseProject" />
+                <option name="name" value="cleanEclipseWtpFacet" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files. [incubating]" />
@@ -486,14 +299,9 @@
                 <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
+                <option name="description" value="Cleans Eclipse wtp configuration files." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
+                <option name="name" value="cleanEclipseWtp" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse classpath file." />
@@ -521,10 +329,6 @@
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="cleanEclipseJdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="init" />
@@ -545,19 +349,9 @@
                 <option name="name" value="bootRepackage" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Run the project with support for auto-detecting main class and reloading static resources" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="bootRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'blog-prototype'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
@@ -565,19 +359,9 @@
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
+                <option name="description" value="Generates the Eclipse WTP facet settings file." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
+                <option name="name" value="eclipseWtpFacet" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'blog-prototype'." />
@@ -595,14 +379,116 @@
                 <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse JDT settings file." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'blog-prototype'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'blog-prototype'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'blog-prototype'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse WTP component settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseWtpComponent" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run the project with support for auto-detecting main class and reloading static resources" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="war" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'blog-prototype'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Eclipse wtp configuration files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseWtp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
@@ -614,14 +500,8 @@
                 <option name="name" value="findMainClass" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse project file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="eclipseProject" />
+                <option name="name" value="cleanEclipseWtpComponent" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'blog-prototype'." />
@@ -635,9 +515,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4591264719725" />
+        <entry key="$PROJECT_DIR$" value="4591356242274" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3064439542" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2532513982" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="212106163" />
       </map>
     </option>
@@ -827,12 +707,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/CatalogServiceImpl.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a15ba7e1-ceaf-40c9-bb39-fa740d96cf44/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/admins/main.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/users/main.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/userspace/blog.js" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/config/FastDFSClientWrapper.java" />
@@ -840,9 +714,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/js/userspace/main.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/userspace/blogedit.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/userspace/u.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/thymeleaf-bootstrap-paginator.js" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/blog.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/CatalogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/config/SecurityConfig.java" />
@@ -851,7 +723,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Entities/Blog.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/es/EsBlogRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CustomUserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
@@ -871,13 +742,22 @@
         <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/VoteServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/BlogServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/users/list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/userspace/blog.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/userspace/u.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/search.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/json/Json2Obj.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/json/JsonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/json/Bean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/DockerController.java" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/config/SSOApplication.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java" />
       </list>
     </option>
   </component>
@@ -891,9 +771,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -904,7 +784,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -912,6 +791,17 @@
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -944,47 +834,36 @@
               <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="userspace" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1004,7 +883,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="D:/LeetCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -1043,124 +922,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
+  <component name="RunManager" selected="Gradle.blog-prototype [build]">
+    <configuration name="Bean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.json.Bean" />
+      <module name="blog-prototype_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.usher.springboot.blog.json.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="JsonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.json.JsonTest" />
+      <module name="blog-prototype_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.usher.springboot.blog.json.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="EsBlogRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-prototype_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.usher.springboot.blog.repository.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.usher.springboot.blog.repository.es" />
-      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.repository.es.EsBlogRepositoryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    <configuration name="blog-prototype [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
     </configuration>
-    <configuration name="EsBlogRepositoryTest.findByBlogId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-prototype_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.usher.springboot.blog.repository.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.usher.springboot.blog.repository.es" />
-      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.repository.es.EsBlogRepositoryTest" />
-      <option name="METHOD_NAME" value="findByBlogId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    <configuration name="blog-prototype [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
     </configuration>
-    <configuration name="VoteRepositoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-prototype_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.usher.springboot.blog.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.usher.springboot.blog.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.repository.VoteRepositoryTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="VoteServiceTest.getVoteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-prototype_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.usher.springboot.blog.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.usher.springboot.blog.service" />
-      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.service.VoteServiceTest" />
-      <option name="METHOD_NAME" value="getVoteById" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="VoteServiceTest.removeVoteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog-prototype_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.usher.springboot.blog.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.usher.springboot.blog.service" />
-      <option name="MAIN_CLASS_NAME" value="com.usher.springboot.blog.service.VoteServiceTest" />
-      <option name="METHOD_NAME" value="removeVoteById" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    <configuration name="blog-prototype [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="war" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1221,19 +1058,19 @@
     <list>
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Application (1)" />
-      <item itemvalue="JUnit.VoteRepositoryTest.test" />
-      <item itemvalue="JUnit.VoteServiceTest.getVoteById" />
-      <item itemvalue="JUnit.VoteServiceTest.removeVoteById" />
-      <item itemvalue="JUnit.EsBlogRepositoryTest" />
-      <item itemvalue="JUnit.EsBlogRepositoryTest.findByBlogId" />
+      <item itemvalue="Application.JsonTest" />
+      <item itemvalue="Application.Bean" />
+      <item itemvalue="Gradle.blog-prototype [war]" />
+      <item itemvalue="Gradle.blog-prototype [clean]" />
+      <item itemvalue="Gradle.blog-prototype [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EsBlogRepositoryTest.findByBlogId" />
-        <item itemvalue="JUnit.EsBlogRepositoryTest" />
-        <item itemvalue="JUnit.VoteServiceTest.removeVoteById" />
-        <item itemvalue="JUnit.VoteServiceTest.getVoteById" />
-        <item itemvalue="JUnit.VoteRepositoryTest.test" />
+        <item itemvalue="Gradle.blog-prototype [build]" />
+        <item itemvalue="Gradle.blog-prototype [clean]" />
+        <item itemvalue="Gradle.blog-prototype [war]" />
+        <item itemvalue="Application.Bean" />
+        <item itemvalue="Application.JsonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1265,7 +1102,10 @@
       <workItem from="1530967254427" duration="10548000" />
       <workItem from="1531016004956" duration="18688000" />
       <workItem from="1531053773135" duration="2912000" />
-      <workItem from="1531058488064" duration="1573000" />
+      <workItem from="1531058488064" duration="2745000" />
+      <workItem from="1531119751637" duration="260000" />
+      <workItem from="1531121071399" duration="5679000" />
+      <workItem from="1531129971353" duration="1919000" />
     </task>
     <servers />
   </component>
@@ -1302,7 +1142,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131121000" />
+    <option name="totallyTimeSpent" value="140151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1315,34 +1155,34 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.0028860029" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32918397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.467903" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.489301" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27960056" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.83309555" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952926" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21380697" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32756132" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15951742" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.31811696" />
-      <window_info anchor="right" id="Gradle" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.32908848" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.0028530671" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.489301" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31811696" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1357,144 +1197,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/EsBlogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2243#2244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/BlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/CustomUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/cropbox.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/tether.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/toastr.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/blog.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/cropbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/tether.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1502,45 +1204,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/es/EsBlogRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/BlogRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CommentRepositoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/es/EsBlogRepositoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/BlogRepositoryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/AuthorityRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-247">
           <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CatalogRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1562,9 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1582,20 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admins/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-40">
@@ -1604,16 +1257,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59" />
       </provider>
@@ -1635,30 +1278,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/avatar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-59" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/blogedit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/catalogedit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/u.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560">
-          <caret line="109" column="97" selection-start-line="109" selection-start-column="97" selection-end-line="109" selection-end-column="97" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
@@ -1685,19 +1304,177 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/users/form.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1499">
-          <caret line="79" column="139" selection-start-line="79" selection-start-column="139" selection-end-line="79" selection-end-column="139" />
+        <state relative-caret-position="399">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/blogedit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="70" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/catalogedit.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userspace/u.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="109" column="97" selection-start-line="109" selection-start-column="97" selection-end-line="109" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="437">
+          <caret line="23" column="89" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admins/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-08.log" />
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-02.log" />
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-01.log" />
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-03.log" />
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-04.log" />
+    <entry file="file://$PROJECT_DIR$/log/logback.2018-07-07.log" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/repository/CatalogRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Vote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
-            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Catalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/json/JsonUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/json/JsonTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/json/Bean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/entities/Authority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/DockerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4940">
+          <caret line="295" column="4" selection-start-line="295" selection-start-column="4" selection-end-line="295" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/config/SSOApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/springboot/blog/ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
           </folding>
         </state>
       </provider>

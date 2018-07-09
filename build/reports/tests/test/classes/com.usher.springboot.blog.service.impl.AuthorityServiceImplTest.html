@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.usher.springboot.blog.service.impl.AuthorityServiceImplTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.usher.springboot.blog.service.impl.AuthorityServiceImplTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.usher.springboot.blog.service.impl.html">com.usher.springboot.blog.service.impl</a> &gt; AuthorityServiceImplTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.025s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getAuthorityById</td>
+<td>1.025s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:14:47.444 logback [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.usher.springboot.blog.service.impl.AuthorityServiceImplTest], using SpringBootContextLoader
+18:14:47.446 logback [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.usher.springboot.blog.service.impl.AuthorityServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:14:47.446 logback [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.usher.springboot.blog.service.impl.AuthorityServiceImplTest]: AuthorityServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:14:47.474 logback [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.usher.springboot.blog.Application for test class com.usher.springboot.blog.service.impl.AuthorityServiceImplTest
+18:14:47.480 logback [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:14:47.485 logback [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3ba574e1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7f3913ab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6b523160, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7c81b316, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c93c21b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5b802069, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2123d348, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@504bdd79, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@223a5e71, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7863b137, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@476584e0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@494b3960]
+Hibernate: select authority0_.id as id1_0_0_, authority0_.name as name2_0_0_ from authority authority0_ where authority0_.id=?
+ROLE_ADMIN
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.4.1</a> at 2018-7-9 18:14:51</p>
+</div>
+</div>
+</body>
+</html>
