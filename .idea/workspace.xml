@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf28056c-0290-4803-ac33-c0bf88263cf0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-09.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/contrller/HelloControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/AuthorityRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/CatalogRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/UserRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/repository/VoteRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/VoteServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/AuthorityServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/usher/springboot/blog/service/impl/BlogServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/DockerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/AuthorityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logback.2018-07-10.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logback.2018-07-10.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -102,13 +78,22 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-947">
+            <state relative-caret-position="608">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -127,11 +112,6 @@
               <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thinker-md.vendor.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/thinker-md.vendor.css">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="thymeleaf-bootstrap-paginator.css" pinned="false" current-in-tab="false">
@@ -724,11 +704,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/service/impl/EsBlogServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/controller/UserspaceController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/blog.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
       </list>
     </option>
   </component>
@@ -796,6 +776,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-prototype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1044,7 +1041,7 @@
       <workItem from="1531121071399" duration="5679000" />
       <workItem from="1531129971353" duration="1919000" />
       <workItem from="1531137893593" duration="824000" />
-      <workItem from="1531202204839" duration="11200000" />
+      <workItem from="1531202204839" duration="11801000" />
     </task>
     <servers />
   </component>
@@ -1081,7 +1078,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152175000" />
+    <option name="totallyTimeSpent" value="152776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1110,7 +1107,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32756132" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31746033" />
@@ -1297,13 +1294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1425,13 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-947">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/springboot/blog/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1439,6 +1422,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
