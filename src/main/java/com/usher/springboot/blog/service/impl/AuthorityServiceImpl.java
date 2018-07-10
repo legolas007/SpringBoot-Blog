@@ -6,6 +6,7 @@ package com.usher.springboot.blog.service.impl;
 import com.usher.springboot.blog.entities.Authority;
 import com.usher.springboot.blog.repository.AuthorityRepository;
 import com.usher.springboot.blog.service.AuthorityService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service
+@Slf4j
 public class AuthorityServiceImpl  implements AuthorityService {
 	
 	@Autowired

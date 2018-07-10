@@ -1,27 +1,25 @@
 package com.usher.springboot.blog.service.impl;
 
-import javax.transaction.Transactional;
-
+import com.usher.springboot.blog.entities.*;
+import com.usher.springboot.blog.entities.es.EsBlog;
 import com.usher.springboot.blog.repository.BlogRepository;
 import com.usher.springboot.blog.service.BlogService;
 import com.usher.springboot.blog.service.EsBlogService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
-import com.usher.springboot.blog.entities.Blog;
-import com.usher.springboot.blog.entities.Catalog;
-import com.usher.springboot.blog.entities.Comment;
-import com.usher.springboot.blog.entities.User;
-import com.usher.springboot.blog.entities.Vote;
-import com.usher.springboot.blog.entities.es.EsBlog;
+import javax.transaction.Transactional;
 
 /**
  * Blog 服务.
  */
 @Service
+@Slf4j
+//@CacheConfig(cacheNames = "blog")
 public class BlogServiceImpl implements BlogService {
 
 	@Autowired
@@ -32,6 +30,7 @@ public class BlogServiceImpl implements BlogService {
 
 	@Transactional
 	@Override
+    //@CachePut(key="#blog.id")
 	public Blog saveBlog(Blog blog) {
 		boolean isNew = (blog.getId() == null);
 		EsBlog esBlog = null;
@@ -52,12 +51,14 @@ public class BlogServiceImpl implements BlogService {
 
 	@Transactional
 	@Override
+    //@CacheEvict(key = "#id")
 	public void removeBlog(Long id) {
 		blogRepository.delete(id);
 		EsBlog esblog = esBlogService.getEsBlogByBlogId(id);
 		esBlogService.removeEsBlog(esblog.getId());
 	}
 
+	//@Cacheable(key = "#id",condition = "#a0>5")
 	@Override
 	public Blog getBlogById(Long id) {
 		return blogRepository.findOne(id);

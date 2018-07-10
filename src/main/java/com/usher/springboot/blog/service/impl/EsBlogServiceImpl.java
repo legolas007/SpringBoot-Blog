@@ -1,12 +1,5 @@
 package com.usher.springboot.blog.service.impl;
 
-import static org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
-import static org.elasticsearch.search.aggregations.AggregationBuilders.terms;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 import com.usher.springboot.blog.entities.User;
 import com.usher.springboot.blog.entities.es.EsBlog;
 import com.usher.springboot.blog.repository.es.EsBlogRepository;
@@ -32,10 +25,17 @@ import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilde
 import org.springframework.data.elasticsearch.core.query.SearchQuery;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
+import static org.elasticsearch.search.aggregations.AggregationBuilders.terms;
+
 /**
  * EsBlog 服务.
  */
 @Service
+//@CacheConfig(cacheNames = "esblog")
 public class EsBlogServiceImpl implements EsBlogService {
 	@Autowired
 	private EsBlogRepository esBlogRepository;
@@ -47,24 +47,28 @@ public class EsBlogServiceImpl implements EsBlogService {
 	private static final Pageable TOP_5_PAGEABLE = new PageRequest(0, 5);
 	private static final String EMPTY_KEYWORD = "";
 
+	//@CacheEvict(key = "#id")
 	@Override
 	public void removeEsBlog(String id) {
 		esBlogRepository.delete(id);
 	}
 
 
+	//@CachePut(key = "#esBlog.id")
 	@Override
 	public EsBlog updateEsBlog(EsBlog esBlog) {
 		return esBlogRepository.save(esBlog);
 	}
 
 
+	//@Cacheable(key = "#blogId")
 	@Override
 	public EsBlog getEsBlogByBlogId(Long blogId) {
 		return esBlogRepository.findByBlogId(blogId);
 	}
 
 
+	//@Cacheable(keyGenerator = "myKeyGenerator")
 	@Override
 	public Page<EsBlog> listNewestEsBlogs(String keyword, Pageable pageable) throws SearchParseException {
 		Page<EsBlog> pages = null;
@@ -78,6 +82,7 @@ public class EsBlogServiceImpl implements EsBlogService {
 		return pages;
 	}
 
+	//@Cacheable(keyGenerator = "myKeyGenerator")
 	@Override
 	public Page<EsBlog> listHotestEsBlogs(String keyword, Pageable pageable) throws SearchParseException{
  
@@ -89,6 +94,7 @@ public class EsBlogServiceImpl implements EsBlogService {
 		return esBlogRepository.findDistinctEsBlogByTitleContainingOrSummaryContainingOrContentContainingOrTagsContaining(keyword, keyword, keyword, keyword, pageable);
 	}
 
+    //@Cacheable(keyGenerator = "myKeyGenerator")
 	@Override
 	public Page<EsBlog> listEsBlogs(Pageable pageable) {
 		return esBlogRepository.findAll(pageable);

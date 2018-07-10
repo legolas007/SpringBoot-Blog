@@ -13,7 +13,6 @@ buildscript {
 	// 自定义  Hibernate 的版本
 	ext['hibernate.version'] = '5.2.8.Final'
 
-	// 使用了 Maven 的中央仓库（你也可以指定其他仓库）
 	repositories {
 		//mavenCentral()
 		maven {
@@ -21,22 +20,20 @@ buildscript {
 		}
 	}
 
-	// 依赖关系
 	dependencies {
 		// classpath 声明说明了在执行其余的脚本时，ClassLoader 可以使用这些依赖项
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
 
-// 使用插件
+// 插件
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'war'
 
-/*
 // 打包的类型为 jar，并指定了生成的打包的文件名称和版本
-jar {
+/*jar {
 	baseName = 'blog-prototype'
 	version = '1.0.0'
 }*/
@@ -45,9 +42,10 @@ war{
     archiveName 'blog-prototype.war'
     from 'SubprojectName/build/dist'
 }
+
 sourceCompatibility = 1.8
 
-// 默认使用了 Maven 的中央仓库。这里改用自定义的镜像库
+
 repositories {
 	//mavenCentral()
 	maven {
@@ -55,12 +53,12 @@ repositories {
 	}
 }
 
-// 依赖关系
 dependencies {
 
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-cache')
 
 	// https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring4
 	compile('org.thymeleaf:thymeleaf-spring4:3.0.2.RELEASE')
@@ -92,5 +90,10 @@ dependencies {
 	compile('net.java.dev.jna:jna:4.3.0')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '1.5.14.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor
+    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '1.5.14.RELEASE'
 
 }

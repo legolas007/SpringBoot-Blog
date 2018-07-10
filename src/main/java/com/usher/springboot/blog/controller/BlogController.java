@@ -1,9 +1,11 @@
 package com.usher.springboot.blog.controller;
 
-import java.util.List;
-
+import com.usher.springboot.blog.entities.User;
+import com.usher.springboot.blog.entities.es.EsBlog;
+import com.usher.springboot.blog.service.EsBlogService;
 import com.usher.springboot.blog.vo.TagVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -15,9 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.usher.springboot.blog.entities.User;
-import com.usher.springboot.blog.entities.es.EsBlog;
-import com.usher.springboot.blog.service.EsBlogService;
+import java.util.List;
 
 /**
  * 主页控制器.
@@ -28,7 +28,9 @@ public class BlogController {
  
 	@Autowired
     private EsBlogService esBlogService;
+
 	@GetMapping
+    @Cacheable(cacheNames = "blog")
 	public String listEsBlogs(
 			@RequestParam(value="order",required=false,defaultValue="new") String order,
 			@RequestParam(value="keyword",required=false,defaultValue="" ) String keyword,
@@ -79,14 +81,16 @@ public class BlogController {
 		
 		return (async==true?"/index :: #mainContainerRepleace":"/index");
 	}
- 
+
+    //@Cacheable(cacheNames = "newBlog",key = "456")
 	@GetMapping("/newest")
 	public String listNewestEsBlogs(Model model) {
 		List<EsBlog> newest = esBlogService.listTop5NewestEsBlogs();
 		model.addAttribute("newest", newest);
 		return "newest";
 	}
-	
+
+    //@Cacheable(cacheNames = "hotBlog",key = "123")
 	@GetMapping("/hotest")
 	public String listHotestEsBlogs(Model model) {
 		List<EsBlog> hotest = esBlogService.listTop5HotestEsBlogs();

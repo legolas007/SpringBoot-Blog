@@ -1,12 +1,16 @@
 package com.usher.springboot.blog.controller;
 
-import java.util.List;
-
-import javax.validation.ConstraintViolationException;
-
+import com.usher.springboot.blog.entities.Blog;
+import com.usher.springboot.blog.entities.Catalog;
+import com.usher.springboot.blog.entities.User;
+import com.usher.springboot.blog.entities.Vote;
+import com.usher.springboot.blog.service.BlogService;
+import com.usher.springboot.blog.service.CatalogService;
+import com.usher.springboot.blog.service.UserService;
 import com.usher.springboot.blog.util.ConstraintViolationExceptionHandler;
 import com.usher.springboot.blog.vo.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -20,22 +24,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.usher.springboot.blog.entities.Blog;
-import com.usher.springboot.blog.entities.Catalog;
-import com.usher.springboot.blog.entities.User;
-import com.usher.springboot.blog.entities.Vote;
-import com.usher.springboot.blog.service.BlogService;
-import com.usher.springboot.blog.service.CatalogService;
-import com.usher.springboot.blog.service.UserService;
+import javax.validation.ConstraintViolationException;
+import java.util.List;
 
 /**
  * 用户主页空间控制器.
@@ -128,7 +121,7 @@ public class UserspaceController {
 		return ResponseEntity.ok().body(new ResponseVO(true, "处理成功", avatarUrl));
 	}
 	
-	
+	@Cacheable(cacheNames = "ublog")
 	@GetMapping("/{username}/blogs")
 	public String listBlogsByOrder(@PathVariable("username") String username,
 			@RequestParam(value="order",required=false,defaultValue="new") String order,
