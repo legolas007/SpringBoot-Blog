@@ -8,6 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @EnableCaching
+//继承SpringBootServletInitializer用于部署
 public class Application extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Application extends SpringBootServletInitializer {
 	}
 
 	/**
-	 *重写configure
+	 *重写configure,用于部署tomcat
 	 * @param builder
 	 * @return
 	 */
